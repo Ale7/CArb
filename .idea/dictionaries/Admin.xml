@@ -2,9 +2,12 @@
   <dictionary name="Admin">
     <words>
       <w>arbs</w>
+      <w>bals</w>
       <w>binance</w>
       <w>bittrex</w>
       <w>ccxt</w>
+      <w>mycursor</w>
+      <w>mydb</w>
     </words>
   </dictionary>
 </component>
