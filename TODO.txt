@@ -1,0 +1,6 @@
+Need to setup a way to get data for all three exchanges: Binance, Bittrex, Kraken
+
+Need data for all possible pairs
+
+So that I can determine which currencies have the best opportunities
+
