@@ -1,6 +1,23 @@
-Need to setup a way to get data for all three exchanges: Binance, Bittrex, Kraken
+[ ] Determine the withdraw fee for any currency at any time on each exchange
 
-Need data for all possible pairs
+----------------------------------------
 
-So that I can determine which currencies have the best opportunities
+Worst case fees:
 
+Binance: 0.075%
+
+Bittrex: 0.25%
+
+Kraken: 0.26%
+
+BINA/TREX = 0.325%
+BINA/KRAK = 0.335%
+TREX/KRAK = 0.51%
+
+----------------------------------------
+
+Binance/Bittrex: ['MCO/BTC', 'BAT/BTC', 'POLY/BTC', 'LUN/BTC', 'SYS/BTC', 'ZRX/ETH', 'STORM/ETH', 'ELF/BTC', 'CVC/BTC', 'GNT/BTC', 'ENG/BTC', 'OMG/ETH', 'SNT/ETH', 'WAVES/ETH', 'MTL/BTC', 'MCO/ETH', 'MANA/BTC', 'DCR/BTC', 'ADA/BTC', 'DASH/ETH', 'GRS/BTC', 'FUN/BTC', 'MFT/BTC', 'POWR/ETH', 'BCH/BTC', 'QTUM/BTC', 'BSV/BTC', 'STEEM/BTC', 'IOTX/BTC', 'ADX/ETH', 'NEO/ETH', 'RVN/BTC', 'REP/ETH', 'GO/BTC', 'ENJ/BTC', 'VIA/BTC', 'LSK/BTC', 'ADA/ETH', 'SNT/BTC', 'DNT/BTC', 'ZEC/ETH', 'STRAT/ETH', 'TRX/BTC', 'XVG/BTC', 'ADX/BTC', 'MANA/ETH', 'BAT/ETH', 'NPXS/ETH', 'ZEC/BTC', 'CND/BTC', 'WAVES/BTC', 'ETC/BTC', 'ARK/BTC', 'REP/BTC', 'ETC/ETH', 'ZEN/BTC', 'ARDR/BTC', 'XEM/BTC', 'XMR/BTC', 'LOOM/BTC', 'BTT/BTC', 'XEM/ETH', 'ENG/ETH', 'RLC/BTC', 'LTC/BTC', 'BNT/ETH', 'XLM/ETH', 'OST/BTC', 'DASH/BTC', 'STRAT/BTC', 'ATOM/BTC', 'LRC/BTC', 'BTS/BTC', 'XRP/BTC', 'ZIL/BTC', 'GNT/ETH', 'NXS/BTC', 'VIB/BTC', 'GTO/BTC', 'CLOAK/BTC', 'IOST/BTC', 'NCASH/BTC', 'NPXS/BTC', 'CVC/ETH', 'DGD/BTC', 'RCN/BTC', 'SC/ETH', 'ONT/BTC', 'LTC/ETH', 'XRP/ETH', 'WINGS/BTC', 'ETH/BTC', 'XZC/BTC', 'VIB/ETH', 'PIVX/BTC', 'POWR/BTC', 'BCPT/BTC', 'TRX/ETH', 'XLM/BTC', 'ONG/BTC', 'NEO/BTC', 'KMD/BTC', 'BNT/BTC', 'SC/BTC', 'DENT/BTC', 'XMR/ETH', 'STORM/BTC', 'NAV/BTC', 'ZRX/BTC', 'QTUM/ETH', 'OMG/BTC', 'STORJ/BTC']
+Binance/Kraken: ['QTUM/BTC', 'ETC/ETH', 'ADA/ETH', 'ZEC/BTC', 'LTC/BTC', 'XMR/BTC', 'DASH/BTC', 'EOS/BTC', 'ETH/BTC', 'BCH/BTC', 'QTUM/ETH', 'REP/BTC', 'XRP/BTC', 'ETC/BTC', 'EOS/ETH', 'XLM/BTC', 'ATOM/BTC', 'REP/ETH', 'ADA/BTC']
+Bittrex/Kraken: ['QTUM/BTC', 'GNO/BTC', 'ATOM/BTC', 'GNO/ETH', 'ZEC/BTC', 'REP/BTC', 'ADA/ETH', 'ETC/ETH', 'LTC/BTC', 'ADA/BTC', 'ETC/BTC', 'MLN/BTC', 'ETH/BTC', 'BCH/BTC', 'DOGE/BTC', 'XLM/BTC', 'XMR/BTC', 'ATOM/ETH', 'REP/ETH', 'XRP/BTC', 'QTUM/ETH', 'DASH/BTC']
+
+----------------------------------------
