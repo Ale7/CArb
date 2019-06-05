@@ -1,0 +1,10 @@
+INFO:root:2019-06-04 19:57:53.605356 - Started running app.py
+INFO:root:2019-06-04 19:57:53.607429 - Binance API connection established
+INFO:root:2019-06-04 19:57:53.607429 - Bittrex API connection established
+INFO:root:2019-06-04 19:57:54.037147 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-04 19:57:56.705684 - Determined all 138 common currency pairs between exchanges: binance, bittrex
+INFO:root:2019-06-04 19:57:56.705684 - Set all arb_pairs quantities to 10
+INFO:root:2019-06-04 19:58:49.056497 - Determined purchase costs for each pair in 'arb_pairs'
+INFO:root:2019-06-04 19:59:34.146778 - Executed all SQL statements inserting purchase costs
+INFO:root:2019-06-04 19:59:34.231787 - Committed all SQL statements inserting purchase costs
+INFO:root:2019-06-04 19:59:34.232786 - Finished running app.py

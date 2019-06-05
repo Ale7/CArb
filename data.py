@@ -1,24 +1,20 @@
-import mysql.connector
+from app import timestamp, mysql_connect
+import logging
 
-# SELECT *
-# FROM binance bina
-# JOIN bittrex trex ON
-# 	(bina.pair = trex.pair AND bina.time = trex.time)
-# WHERE (bina.buy > trex.buy AND bina.price < trex.price) OR
-#       (bina.buy < trex.buy AND bina.price > trex.price)
+logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
-mydb = mysql.connector.connect(
-    host='67.225.225.24',
-    user='alecwood_user198',
-    passwd='pass198',
-    db="alecwood_crypto"
-)
+logging.info(timestamp() + f" - Started running data.py")
+
+mydb = mysql_connect('67.225.225.24', 'alecwood_user198', 'pass198', 'alecwood_crypto')
+logging.info(timestamp() + " - Connected to MySQL database 'alecwood_crypto'")
 
 mycursor = mydb.cursor()
-
 mycursor.execute("SELECT * FROM binance")
+result = mycursor.fetchall()
+logging.info(timestamp() + " - Fetched all rows from 'binance' table")
 
-myresult = mycursor.fetchall()
+for x in result:
+    print(x)
+logging.info(timestamp() + " - Printed all rows from 'binance' table")
 
-for x in myresult:
-  print(x)
+logging.info(timestamp() + f" - Finished running data.py")

@@ -1,0 +1,5 @@
+INFO:root:2019-06-04 20:00:11.596128 - Started running data.py
+INFO:root:2019-06-04 20:00:11.996963 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-04 20:00:12.232509 - Fetched all rows from 'binance' table
+INFO:root:2019-06-04 20:00:12.238511 - Printed all rows from 'binance' table
+INFO:root:2019-06-04 20:00:12.238511 - Finished running data.py
