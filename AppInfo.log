@@ -1,0 +1,5 @@
+INFO:root:2019-06-04 19:09:03.475083 - Binance API connection established
+INFO:root:2019-06-04 19:09:03.478083 - Bittrex API connection established
+INFO:root:2019-06-04 19:09:03.480082 - Kraken API connection established
+INFO:root:2019-06-04 19:09:03.858344 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-04 19:09:05.613879 - Determined all 138 common currency pairs between exchanges: binance, bittrex
