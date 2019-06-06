@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f173114-349d-4f2e-8c14-2f5addb95545" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ResearchLogging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLogging.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/research.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResearchLogging.log" beforeDir="false" afterPath="$PROJECT_DIR$/ResearchLogging.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/research.py" beforeDir="false" afterPath="$PROJECT_DIR$/research.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/research.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="178" column="46" lean-forward="true" selection-start-line="178" selection-start-column="46" selection-end-line="178" selection-end-column="46" />
+            <state relative-caret-position="578">
+              <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -32,11 +27,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ResearchLogging.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="28" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
         </entry>
       </file>
     </leaf>
@@ -274,11 +265,7 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ResearchLogging.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
@@ -287,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/research.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="178" column="46" lean-forward="true" selection-start-line="178" selection-start-column="46" selection-end-line="178" selection-end-column="46" />
+        <state relative-caret-position="578">
+          <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
