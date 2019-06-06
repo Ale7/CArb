@@ -1,4 +1,4 @@
-from app import timestamp, mysql_connect
+from research import timestamp, mysql_connect
 import logging
 
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
