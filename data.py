@@ -31,9 +31,13 @@ for r in result:
 log("Prepared all data subplots")
 
 plt.style.use('dark_background')
-fig = plt.figure()
+# Changes windows title
+fig = plt.figure(num='CArb')
 date_fmt = '%H:%M'
 date_formatter = mdate.DateFormatter(date_fmt)
+# Makes window open full size
+mng = plt.get_current_fig_manager()
+mng.window.state('zoomed')
 
 for i in range(1, 31):
     ax = fig.add_subplot(5, 6, i)

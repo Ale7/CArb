@@ -1,0 +1,720 @@
+INFO:root:2019-06-07 12:00:00.524020 - Started running app.py
+INFO:root:2019-06-07 12:00:00.527019 - Binance API connection established
+INFO:root:2019-06-07 12:00:00.529019 - Bittrex API connection established
+INFO:root:2019-06-07 12:00:00.901983 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:00:13.355476 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:00:13.356481 - Finished running app.py
+INFO:root:2019-06-07 12:00:30.514376 - Started running app.py
+INFO:root:2019-06-07 12:00:30.517376 - Binance API connection established
+INFO:root:2019-06-07 12:00:30.520374 - Bittrex API connection established
+INFO:root:2019-06-07 12:00:30.892277 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:00:42.585232 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:00:42.585232 - Finished running app.py
+INFO:root:2019-06-07 12:01:00.515474 - Started running app.py
+INFO:root:2019-06-07 12:01:00.518474 - Binance API connection established
+INFO:root:2019-06-07 12:01:00.520474 - Bittrex API connection established
+INFO:root:2019-06-07 12:01:00.898532 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:01:14.068969 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:01:14.068969 - Finished running app.py
+INFO:root:2019-06-07 12:01:30.525858 - Started running app.py
+INFO:root:2019-06-07 12:01:30.528856 - Binance API connection established
+INFO:root:2019-06-07 12:01:30.533857 - Bittrex API connection established
+INFO:root:2019-06-07 12:01:30.907915 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:01:45.064846 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:01:45.064846 - Finished running app.py
+INFO:root:2019-06-07 12:02:00.529003 - Started running app.py
+INFO:root:2019-06-07 12:02:00.533002 - Binance API connection established
+INFO:root:2019-06-07 12:02:00.535002 - Bittrex API connection established
+INFO:root:2019-06-07 12:02:00.911269 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:02:14.152006 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:02:14.152006 - Finished running app.py
+INFO:root:2019-06-07 12:02:30.502632 - Started running app.py
+INFO:root:2019-06-07 12:02:30.518257 - Binance API connection established
+INFO:root:2019-06-07 12:02:30.518257 - Bittrex API connection established
+INFO:root:2019-06-07 12:02:30.904329 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:02:44.543606 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:02:44.543606 - Finished running app.py
+INFO:root:2019-06-07 12:03:00.516420 - Started running app.py
+INFO:root:2019-06-07 12:03:00.520420 - Binance API connection established
+INFO:root:2019-06-07 12:03:00.522421 - Bittrex API connection established
+INFO:root:2019-06-07 12:03:00.899311 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:03:14.584060 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:03:14.584060 - Finished running app.py
+INFO:root:2019-06-07 12:03:30.497807 - Started running app.py
+INFO:root:2019-06-07 12:03:30.500806 - Binance API connection established
+INFO:root:2019-06-07 12:03:30.503806 - Bittrex API connection established
+INFO:root:2019-06-07 12:03:30.875825 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:03:43.540431 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:03:43.541427 - Finished running app.py
+INFO:root:2019-06-07 12:04:00.518515 - Started running app.py
+INFO:root:2019-06-07 12:04:00.521514 - Binance API connection established
+INFO:root:2019-06-07 12:04:00.523514 - Bittrex API connection established
+INFO:root:2019-06-07 12:04:00.893663 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:04:14.721025 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:04:14.722025 - Finished running app.py
+INFO:root:2019-06-07 12:04:31.395160 - Started running app.py
+INFO:root:2019-06-07 12:04:31.407160 - Binance API connection established
+INFO:root:2019-06-07 12:04:31.416159 - Bittrex API connection established
+INFO:root:2019-06-07 12:04:31.884149 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:04:45.868554 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:04:45.868554 - Finished running app.py
+INFO:root:2019-06-07 12:05:00.529687 - Started running app.py
+INFO:root:2019-06-07 12:05:00.532686 - Binance API connection established
+INFO:root:2019-06-07 12:05:00.534687 - Bittrex API connection established
+INFO:root:2019-06-07 12:05:00.904927 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:05:14.645860 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:05:14.645860 - Finished running app.py
+INFO:root:2019-06-07 12:05:30.510567 - Started running app.py
+INFO:root:2019-06-07 12:05:30.514566 - Binance API connection established
+INFO:root:2019-06-07 12:05:30.516567 - Bittrex API connection established
+INFO:root:2019-06-07 12:05:30.904697 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:05:42.650040 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:05:42.650040 - Finished running app.py
+INFO:root:2019-06-07 12:06:00.538311 - Started running app.py
+INFO:root:2019-06-07 12:06:00.541311 - Binance API connection established
+INFO:root:2019-06-07 12:06:00.543311 - Bittrex API connection established
+INFO:root:2019-06-07 12:06:00.912605 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:06:17.227346 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:06:17.227346 - Finished running app.py
+INFO:root:2019-06-07 12:06:30.517194 - Started running app.py
+INFO:root:2019-06-07 12:06:30.521194 - Binance API connection established
+INFO:root:2019-06-07 12:06:30.523193 - Bittrex API connection established
+INFO:root:2019-06-07 12:06:30.911155 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:06:45.042643 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:06:45.042643 - Finished running app.py
+INFO:root:2019-06-07 12:07:00.545894 - Started running app.py
+INFO:root:2019-06-07 12:07:00.548894 - Binance API connection established
+INFO:root:2019-06-07 12:07:00.550894 - Bittrex API connection established
+INFO:root:2019-06-07 12:07:00.923672 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:07:14.094696 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:07:14.095106 - Finished running app.py
+INFO:root:2019-06-07 12:07:30.514380 - Started running app.py
+INFO:root:2019-06-07 12:07:30.517379 - Binance API connection established
+INFO:root:2019-06-07 12:07:30.519380 - Bittrex API connection established
+INFO:root:2019-06-07 12:07:30.890243 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:07:42.944538 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:07:42.944538 - Finished running app.py
+INFO:root:2019-06-07 12:08:00.520028 - Started running app.py
+INFO:root:2019-06-07 12:08:00.523028 - Binance API connection established
+INFO:root:2019-06-07 12:08:00.525028 - Bittrex API connection established
+INFO:root:2019-06-07 12:08:00.898047 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:08:14.730671 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:08:14.730671 - Finished running app.py
+INFO:root:2019-06-07 12:08:30.559862 - Started running app.py
+INFO:root:2019-06-07 12:08:30.562861 - Binance API connection established
+INFO:root:2019-06-07 12:08:30.564861 - Bittrex API connection established
+INFO:root:2019-06-07 12:08:30.934886 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:08:44.744710 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:08:44.744710 - Finished running app.py
+INFO:root:2019-06-07 12:09:00.526910 - Started running app.py
+INFO:root:2019-06-07 12:09:00.529910 - Binance API connection established
+INFO:root:2019-06-07 12:09:00.531910 - Bittrex API connection established
+INFO:root:2019-06-07 12:09:00.899314 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:09:14.429839 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:09:14.429839 - Finished running app.py
+INFO:root:2019-06-07 12:09:30.511223 - Started running app.py
+INFO:root:2019-06-07 12:09:30.514222 - Binance API connection established
+INFO:root:2019-06-07 12:09:30.516223 - Bittrex API connection established
+INFO:root:2019-06-07 12:09:30.910125 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:09:44.384942 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:09:44.385942 - Finished running app.py
+INFO:root:2019-06-07 12:10:00.531891 - Started running app.py
+INFO:root:2019-06-07 12:10:00.534890 - Binance API connection established
+INFO:root:2019-06-07 12:10:00.536890 - Bittrex API connection established
+INFO:root:2019-06-07 12:10:00.908956 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:10:16.503542 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:10:16.503956 - Finished running app.py
+INFO:root:2019-06-07 12:10:30.558737 - Started running app.py
+INFO:root:2019-06-07 12:10:30.561738 - Binance API connection established
+INFO:root:2019-06-07 12:10:30.564737 - Bittrex API connection established
+INFO:root:2019-06-07 12:10:30.940079 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:10:44.146680 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:10:44.146680 - Finished running app.py
+INFO:root:2019-06-07 12:11:00.550294 - Started running app.py
+INFO:root:2019-06-07 12:11:00.553294 - Binance API connection established
+INFO:root:2019-06-07 12:11:00.555294 - Bittrex API connection established
+INFO:root:2019-06-07 12:11:00.954470 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:11:16.256562 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:11:16.256562 - Finished running app.py
+INFO:root:2019-06-07 12:11:30.538080 - Started running app.py
+INFO:root:2019-06-07 12:11:30.541080 - Binance API connection established
+INFO:root:2019-06-07 12:11:30.544080 - Bittrex API connection established
+INFO:root:2019-06-07 12:11:30.915922 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:11:45.581116 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:11:45.581116 - Finished running app.py
+INFO:root:2019-06-07 12:12:00.520640 - Started running app.py
+INFO:root:2019-06-07 12:12:00.523640 - Binance API connection established
+INFO:root:2019-06-07 12:12:00.525640 - Bittrex API connection established
+INFO:root:2019-06-07 12:12:00.904013 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:12:13.407067 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:12:13.407067 - Finished running app.py
+INFO:root:2019-06-07 12:12:30.544881 - Started running app.py
+INFO:root:2019-06-07 12:12:30.547881 - Binance API connection established
+INFO:root:2019-06-07 12:12:30.549881 - Bittrex API connection established
+INFO:root:2019-06-07 12:12:30.924652 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:12:43.883558 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:12:43.883558 - Finished running app.py
+INFO:root:2019-06-07 12:13:00.527272 - Started running app.py
+INFO:root:2019-06-07 12:13:00.530272 - Binance API connection established
+INFO:root:2019-06-07 12:13:00.532272 - Bittrex API connection established
+INFO:root:2019-06-07 12:13:00.903556 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:13:14.574017 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:13:14.574366 - Finished running app.py
+INFO:root:2019-06-07 12:13:30.510736 - Started running app.py
+INFO:root:2019-06-07 12:13:30.513735 - Binance API connection established
+INFO:root:2019-06-07 12:13:30.515734 - Bittrex API connection established
+INFO:root:2019-06-07 12:13:30.894316 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:13:44.513782 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:13:44.513782 - Finished running app.py
+INFO:root:2019-06-07 12:14:00.550221 - Started running app.py
+INFO:root:2019-06-07 12:14:00.554221 - Binance API connection established
+INFO:root:2019-06-07 12:14:00.556221 - Bittrex API connection established
+INFO:root:2019-06-07 12:14:00.929119 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:14:15.942617 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:14:15.942617 - Finished running app.py
+INFO:root:2019-06-07 12:14:30.525316 - Started running app.py
+INFO:root:2019-06-07 12:14:30.529316 - Binance API connection established
+INFO:root:2019-06-07 12:14:30.531315 - Bittrex API connection established
+INFO:root:2019-06-07 12:14:30.902043 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:14:43.637092 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:14:43.637092 - Finished running app.py
+INFO:root:2019-06-07 12:15:00.545535 - Started running app.py
+INFO:root:2019-06-07 12:15:00.548534 - Binance API connection established
+INFO:root:2019-06-07 12:15:00.550534 - Bittrex API connection established
+INFO:root:2019-06-07 12:15:00.935603 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:15:14.397695 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:15:14.397695 - Finished running app.py
+INFO:root:2019-06-07 12:15:30.526329 - Started running app.py
+INFO:root:2019-06-07 12:15:30.529329 - Binance API connection established
+INFO:root:2019-06-07 12:15:30.532328 - Bittrex API connection established
+INFO:root:2019-06-07 12:15:31.070005 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:15:44.002523 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:15:44.002523 - Finished running app.py
+INFO:root:2019-06-07 12:16:00.541110 - Started running app.py
+INFO:root:2019-06-07 12:16:00.544110 - Binance API connection established
+INFO:root:2019-06-07 12:16:00.547109 - Bittrex API connection established
+INFO:root:2019-06-07 12:16:00.924294 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:16:14.162494 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:16:14.162494 - Finished running app.py
+INFO:root:2019-06-07 12:16:30.501241 - Started running app.py
+INFO:root:2019-06-07 12:16:30.504240 - Binance API connection established
+INFO:root:2019-06-07 12:16:30.506238 - Bittrex API connection established
+INFO:root:2019-06-07 12:16:30.880439 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:16:43.408944 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:16:43.408944 - Finished running app.py
+INFO:root:2019-06-07 12:17:00.537015 - Started running app.py
+INFO:root:2019-06-07 12:17:00.540015 - Binance API connection established
+INFO:root:2019-06-07 12:17:00.543015 - Bittrex API connection established
+INFO:root:2019-06-07 12:17:00.918309 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:17:13.990093 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:17:13.990093 - Finished running app.py
+INFO:root:2019-06-07 12:17:30.512618 - Started running app.py
+INFO:root:2019-06-07 12:17:30.515618 - Binance API connection established
+INFO:root:2019-06-07 12:17:30.519618 - Bittrex API connection established
+INFO:root:2019-06-07 12:17:30.894371 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:17:45.119420 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:17:45.119420 - Finished running app.py
+INFO:root:2019-06-07 12:18:00.543058 - Started running app.py
+INFO:root:2019-06-07 12:18:00.546058 - Binance API connection established
+INFO:root:2019-06-07 12:18:00.548058 - Bittrex API connection established
+INFO:root:2019-06-07 12:18:00.926458 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:18:14.019348 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:18:14.019348 - Finished running app.py
+INFO:root:2019-06-07 12:18:30.512529 - Started running app.py
+INFO:root:2019-06-07 12:18:30.516528 - Binance API connection established
+INFO:root:2019-06-07 12:18:30.518528 - Bittrex API connection established
+INFO:root:2019-06-07 12:18:30.893215 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:18:44.336780 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:18:44.336780 - Finished running app.py
+INFO:root:2019-06-07 12:19:00.534620 - Started running app.py
+INFO:root:2019-06-07 12:19:00.537619 - Binance API connection established
+INFO:root:2019-06-07 12:19:00.539619 - Bittrex API connection established
+INFO:root:2019-06-07 12:19:00.909715 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:19:14.413524 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:19:14.414521 - Finished running app.py
+INFO:root:2019-06-07 12:19:30.507777 - Started running app.py
+INFO:root:2019-06-07 12:19:30.510777 - Binance API connection established
+INFO:root:2019-06-07 12:19:30.513776 - Bittrex API connection established
+INFO:root:2019-06-07 12:19:30.900131 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:19:44.292720 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:19:44.292720 - Finished running app.py
+INFO:root:2019-06-07 12:20:00.522106 - Started running app.py
+INFO:root:2019-06-07 12:20:00.525105 - Binance API connection established
+INFO:root:2019-06-07 12:20:00.528105 - Bittrex API connection established
+INFO:root:2019-06-07 12:20:00.909899 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:20:13.950735 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:20:13.951732 - Finished running app.py
+INFO:root:2019-06-07 12:20:30.512646 - Started running app.py
+INFO:root:2019-06-07 12:20:30.518646 - Binance API connection established
+INFO:root:2019-06-07 12:20:30.521645 - Bittrex API connection established
+INFO:root:2019-06-07 12:20:30.900326 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:20:44.127904 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:20:44.127904 - Finished running app.py
+INFO:root:2019-06-07 12:21:00.524703 - Started running app.py
+INFO:root:2019-06-07 12:21:00.527703 - Binance API connection established
+INFO:root:2019-06-07 12:21:00.529703 - Bittrex API connection established
+INFO:root:2019-06-07 12:21:00.962983 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:21:14.493153 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:21:14.493153 - Finished running app.py
+INFO:root:2019-06-07 12:21:30.545608 - Started running app.py
+INFO:root:2019-06-07 12:21:30.548607 - Binance API connection established
+INFO:root:2019-06-07 12:21:30.550607 - Bittrex API connection established
+INFO:root:2019-06-07 12:21:30.920449 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:21:44.703771 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:21:44.703771 - Finished running app.py
+INFO:root:2019-06-07 12:22:00.535036 - Started running app.py
+INFO:root:2019-06-07 12:22:00.538035 - Binance API connection established
+INFO:root:2019-06-07 12:22:00.540035 - Bittrex API connection established
+INFO:root:2019-06-07 12:22:00.911860 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:22:13.998568 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:22:13.998568 - Finished running app.py
+INFO:root:2019-06-07 12:22:30.511830 - Started running app.py
+INFO:root:2019-06-07 12:22:30.514828 - Binance API connection established
+INFO:root:2019-06-07 12:22:30.516828 - Bittrex API connection established
+INFO:root:2019-06-07 12:22:30.891274 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:22:43.647776 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:22:43.647776 - Finished running app.py
+INFO:root:2019-06-07 12:23:00.549448 - Started running app.py
+INFO:root:2019-06-07 12:23:00.552448 - Binance API connection established
+INFO:root:2019-06-07 12:23:00.555447 - Bittrex API connection established
+INFO:root:2019-06-07 12:23:00.984713 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:23:15.445145 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:23:15.445145 - Finished running app.py
+INFO:root:2019-06-07 12:23:30.515776 - Started running app.py
+INFO:root:2019-06-07 12:23:30.518775 - Binance API connection established
+INFO:root:2019-06-07 12:23:30.520775 - Bittrex API connection established
+INFO:root:2019-06-07 12:23:30.891608 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:23:43.599243 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:23:43.599243 - Finished running app.py
+INFO:root:2019-06-07 12:24:00.541983 - Started running app.py
+INFO:root:2019-06-07 12:24:00.544983 - Binance API connection established
+INFO:root:2019-06-07 12:24:00.546983 - Bittrex API connection established
+INFO:root:2019-06-07 12:24:00.923772 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:24:16.005560 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:24:16.005560 - Finished running app.py
+INFO:root:2019-06-07 12:24:30.533982 - Started running app.py
+INFO:root:2019-06-07 12:24:30.536980 - Binance API connection established
+INFO:root:2019-06-07 12:24:30.539984 - Bittrex API connection established
+INFO:root:2019-06-07 12:24:30.913004 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:24:43.420713 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:24:43.420713 - Finished running app.py
+INFO:root:2019-06-07 12:25:00.548382 - Started running app.py
+INFO:root:2019-06-07 12:25:00.551383 - Binance API connection established
+INFO:root:2019-06-07 12:25:00.554383 - Bittrex API connection established
+INFO:root:2019-06-07 12:25:00.932619 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:25:14.213030 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:25:14.213030 - Finished running app.py
+INFO:root:2019-06-07 12:25:30.532596 - Started running app.py
+INFO:root:2019-06-07 12:25:30.536596 - Binance API connection established
+INFO:root:2019-06-07 12:25:30.538598 - Bittrex API connection established
+INFO:root:2019-06-07 12:25:30.918656 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:25:42.897261 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:25:42.897261 - Finished running app.py
+INFO:root:2019-06-07 12:26:00.513832 - Started running app.py
+INFO:root:2019-06-07 12:26:00.517832 - Binance API connection established
+INFO:root:2019-06-07 12:26:00.519832 - Bittrex API connection established
+INFO:root:2019-06-07 12:26:01.084340 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:26:13.754278 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:26:13.754278 - Finished running app.py
+INFO:root:2019-06-07 12:26:30.516562 - Started running app.py
+INFO:root:2019-06-07 12:26:30.520563 - Binance API connection established
+INFO:root:2019-06-07 12:26:30.522563 - Bittrex API connection established
+INFO:root:2019-06-07 12:26:30.894079 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:26:43.562272 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:26:43.562272 - Finished running app.py
+INFO:root:2019-06-07 12:27:00.540812 - Started running app.py
+INFO:root:2019-06-07 12:27:00.543812 - Binance API connection established
+INFO:root:2019-06-07 12:27:00.545812 - Bittrex API connection established
+INFO:root:2019-06-07 12:27:00.970449 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:27:12.714955 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:27:12.714955 - Finished running app.py
+INFO:root:2019-06-07 12:27:30.519095 - Started running app.py
+INFO:root:2019-06-07 12:27:30.522096 - Binance API connection established
+INFO:root:2019-06-07 12:27:30.524095 - Bittrex API connection established
+INFO:root:2019-06-07 12:27:30.900783 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:27:44.407713 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:27:44.407713 - Finished running app.py
+INFO:root:2019-06-07 12:28:00.535972 - Started running app.py
+INFO:root:2019-06-07 12:28:00.538971 - Binance API connection established
+INFO:root:2019-06-07 12:28:00.540971 - Bittrex API connection established
+INFO:root:2019-06-07 12:28:00.912006 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:28:13.272339 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:28:13.272339 - Finished running app.py
+INFO:root:2019-06-07 12:28:30.525597 - Started running app.py
+INFO:root:2019-06-07 12:28:30.529598 - Binance API connection established
+INFO:root:2019-06-07 12:28:30.533596 - Bittrex API connection established
+INFO:root:2019-06-07 12:28:30.911989 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:28:44.453923 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:28:44.453923 - Finished running app.py
+INFO:root:2019-06-07 12:29:00.529396 - Started running app.py
+INFO:root:2019-06-07 12:29:00.533396 - Binance API connection established
+INFO:root:2019-06-07 12:29:00.535396 - Bittrex API connection established
+INFO:root:2019-06-07 12:29:00.911171 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:29:14.994056 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:29:14.994056 - Finished running app.py
+INFO:root:2019-06-07 12:29:30.517067 - Started running app.py
+INFO:root:2019-06-07 12:29:30.520066 - Binance API connection established
+INFO:root:2019-06-07 12:29:30.522066 - Bittrex API connection established
+INFO:root:2019-06-07 12:29:31.099433 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:29:44.279736 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:29:44.279736 - Finished running app.py
+INFO:root:2019-06-07 12:30:00.542867 - Started running app.py
+INFO:root:2019-06-07 12:30:00.546867 - Binance API connection established
+INFO:root:2019-06-07 12:30:00.548867 - Bittrex API connection established
+INFO:root:2019-06-07 12:30:00.918272 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:30:13.869082 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:30:13.869082 - Finished running app.py
+INFO:root:2019-06-07 12:30:30.542588 - Started running app.py
+INFO:root:2019-06-07 12:30:30.545588 - Binance API connection established
+INFO:root:2019-06-07 12:30:30.547588 - Bittrex API connection established
+INFO:root:2019-06-07 12:30:30.921783 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:30:43.189721 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:30:43.189721 - Finished running app.py
+INFO:root:2019-06-07 12:31:00.528749 - Started running app.py
+INFO:root:2019-06-07 12:31:00.531749 - Binance API connection established
+INFO:root:2019-06-07 12:31:00.534748 - Bittrex API connection established
+INFO:root:2019-06-07 12:31:00.904953 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:31:15.558468 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:31:15.558468 - Finished running app.py
+INFO:root:2019-06-07 12:31:30.524140 - Started running app.py
+INFO:root:2019-06-07 12:31:30.528139 - Binance API connection established
+INFO:root:2019-06-07 12:31:30.530140 - Bittrex API connection established
+INFO:root:2019-06-07 12:31:30.901459 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:31:44.144005 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:31:44.144005 - Finished running app.py
+INFO:root:2019-06-07 12:32:00.529489 - Started running app.py
+INFO:root:2019-06-07 12:32:00.533489 - Binance API connection established
+INFO:root:2019-06-07 12:32:00.535487 - Bittrex API connection established
+INFO:root:2019-06-07 12:32:00.903757 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:32:14.328041 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:32:14.329039 - Finished running app.py
+INFO:root:2019-06-07 12:32:30.543963 - Started running app.py
+INFO:root:2019-06-07 12:32:30.547963 - Binance API connection established
+INFO:root:2019-06-07 12:32:30.549962 - Bittrex API connection established
+INFO:root:2019-06-07 12:32:30.919055 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:32:42.581933 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:32:42.581933 - Finished running app.py
+INFO:root:2019-06-07 12:33:00.536879 - Started running app.py
+INFO:root:2019-06-07 12:33:00.539877 - Binance API connection established
+INFO:root:2019-06-07 12:33:00.541876 - Bittrex API connection established
+INFO:root:2019-06-07 12:33:00.910331 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:33:15.423570 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:33:15.423570 - Finished running app.py
+INFO:root:2019-06-07 12:33:30.526274 - Started running app.py
+INFO:root:2019-06-07 12:33:30.529273 - Binance API connection established
+INFO:root:2019-06-07 12:33:30.531274 - Bittrex API connection established
+INFO:root:2019-06-07 12:33:30.912027 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:33:44.061703 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:33:44.062699 - Finished running app.py
+INFO:root:2019-06-07 12:34:00.558210 - Started running app.py
+INFO:root:2019-06-07 12:34:00.562210 - Binance API connection established
+INFO:root:2019-06-07 12:34:00.564210 - Bittrex API connection established
+INFO:root:2019-06-07 12:34:00.943916 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:34:13.698955 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:34:13.699183 - Finished running app.py
+INFO:root:2019-06-07 12:34:30.520297 - Started running app.py
+INFO:root:2019-06-07 12:34:30.524297 - Binance API connection established
+INFO:root:2019-06-07 12:34:30.526297 - Bittrex API connection established
+INFO:root:2019-06-07 12:34:30.896049 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:34:44.536449 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:34:44.536449 - Finished running app.py
+INFO:root:2019-06-07 12:35:00.531779 - Started running app.py
+INFO:root:2019-06-07 12:35:00.534778 - Binance API connection established
+INFO:root:2019-06-07 12:35:00.536778 - Bittrex API connection established
+INFO:root:2019-06-07 12:35:00.909525 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:35:14.179232 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:35:14.179232 - Finished running app.py
+INFO:root:2019-06-07 12:35:30.548398 - Started running app.py
+INFO:root:2019-06-07 12:35:30.552398 - Binance API connection established
+INFO:root:2019-06-07 12:35:30.554398 - Bittrex API connection established
+INFO:root:2019-06-07 12:35:30.926766 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:35:43.502845 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:35:43.502845 - Finished running app.py
+INFO:root:2019-06-07 12:36:00.514641 - Started running app.py
+INFO:root:2019-06-07 12:36:00.517640 - Binance API connection established
+INFO:root:2019-06-07 12:36:00.519640 - Bittrex API connection established
+INFO:root:2019-06-07 12:36:00.890921 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:36:13.245601 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:36:13.245601 - Finished running app.py
+INFO:root:2019-06-07 12:36:30.542766 - Started running app.py
+INFO:root:2019-06-07 12:36:30.545767 - Binance API connection established
+INFO:root:2019-06-07 12:36:30.548767 - Bittrex API connection established
+INFO:root:2019-06-07 12:36:30.919710 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:36:44.869851 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:36:44.869851 - Finished running app.py
+INFO:root:2019-06-07 12:37:00.530005 - Started running app.py
+INFO:root:2019-06-07 12:37:00.533005 - Binance API connection established
+INFO:root:2019-06-07 12:37:00.535005 - Bittrex API connection established
+INFO:root:2019-06-07 12:37:00.906048 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:37:13.645550 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:37:13.645550 - Finished running app.py
+INFO:root:2019-06-07 12:37:30.524829 - Started running app.py
+INFO:root:2019-06-07 12:37:30.527829 - Binance API connection established
+INFO:root:2019-06-07 12:37:30.530828 - Bittrex API connection established
+INFO:root:2019-06-07 12:37:30.900250 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:37:44.942452 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:37:44.943452 - Finished running app.py
+INFO:root:2019-06-07 12:38:00.526693 - Started running app.py
+INFO:root:2019-06-07 12:38:00.529692 - Binance API connection established
+INFO:root:2019-06-07 12:38:00.531692 - Bittrex API connection established
+INFO:root:2019-06-07 12:38:00.900358 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:38:13.711833 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:38:13.711833 - Finished running app.py
+INFO:root:2019-06-07 12:38:30.527495 - Started running app.py
+INFO:root:2019-06-07 12:38:30.530494 - Binance API connection established
+INFO:root:2019-06-07 12:38:30.533494 - Bittrex API connection established
+INFO:root:2019-06-07 12:38:30.902326 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:38:44.783074 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:38:44.783074 - Finished running app.py
+INFO:root:2019-06-07 12:39:00.552677 - Started running app.py
+INFO:root:2019-06-07 12:39:00.556677 - Binance API connection established
+INFO:root:2019-06-07 12:39:00.558677 - Bittrex API connection established
+INFO:root:2019-06-07 12:39:00.961284 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:39:13.676662 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:39:13.676662 - Finished running app.py
+INFO:root:2019-06-07 12:39:30.536138 - Started running app.py
+INFO:root:2019-06-07 12:39:30.539138 - Binance API connection established
+INFO:root:2019-06-07 12:39:30.542137 - Bittrex API connection established
+INFO:root:2019-06-07 12:39:30.938006 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:39:44.032946 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:39:44.032946 - Finished running app.py
+INFO:root:2019-06-07 12:40:00.526146 - Started running app.py
+INFO:root:2019-06-07 12:40:00.530145 - Binance API connection established
+INFO:root:2019-06-07 12:40:00.532146 - Bittrex API connection established
+INFO:root:2019-06-07 12:40:00.901927 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:40:15.145370 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:40:15.145370 - Finished running app.py
+INFO:root:2019-06-07 12:40:30.526758 - Started running app.py
+INFO:root:2019-06-07 12:40:30.530757 - Binance API connection established
+INFO:root:2019-06-07 12:40:30.532757 - Bittrex API connection established
+INFO:root:2019-06-07 12:40:30.902476 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:40:45.527279 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:40:45.527279 - Finished running app.py
+INFO:root:2019-06-07 12:41:00.527567 - Started running app.py
+INFO:root:2019-06-07 12:41:00.530568 - Binance API connection established
+INFO:root:2019-06-07 12:41:00.532567 - Bittrex API connection established
+INFO:root:2019-06-07 12:41:00.906175 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:41:14.199346 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:41:14.199346 - Finished running app.py
+INFO:root:2019-06-07 12:41:30.556710 - Started running app.py
+INFO:root:2019-06-07 12:41:30.560709 - Binance API connection established
+INFO:root:2019-06-07 12:41:30.563709 - Bittrex API connection established
+INFO:root:2019-06-07 12:41:30.942357 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:41:43.852914 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:41:43.853272 - Finished running app.py
+INFO:root:2019-06-07 12:42:00.533914 - Started running app.py
+INFO:root:2019-06-07 12:42:00.536914 - Binance API connection established
+INFO:root:2019-06-07 12:42:00.538915 - Bittrex API connection established
+INFO:root:2019-06-07 12:42:01.342233 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:42:16.223339 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:42:16.223339 - Finished running app.py
+INFO:root:2019-06-07 12:42:30.559718 - Started running app.py
+INFO:root:2019-06-07 12:42:30.563718 - Binance API connection established
+INFO:root:2019-06-07 12:42:30.565717 - Bittrex API connection established
+INFO:root:2019-06-07 12:42:30.969856 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:42:44.402893 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:42:44.402893 - Finished running app.py
+INFO:root:2019-06-07 12:43:00.538899 - Started running app.py
+INFO:root:2019-06-07 12:43:00.541899 - Binance API connection established
+INFO:root:2019-06-07 12:43:00.543898 - Bittrex API connection established
+INFO:root:2019-06-07 12:43:00.921599 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:43:14.929643 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:43:14.929643 - Finished running app.py
+INFO:root:2019-06-07 12:43:30.536353 - Started running app.py
+INFO:root:2019-06-07 12:43:30.539353 - Binance API connection established
+INFO:root:2019-06-07 12:43:30.541352 - Bittrex API connection established
+INFO:root:2019-06-07 12:43:30.919283 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:43:44.684575 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:43:44.684575 - Finished running app.py
+INFO:root:2019-06-07 12:44:00.547668 - Started running app.py
+INFO:root:2019-06-07 12:44:00.550667 - Binance API connection established
+INFO:root:2019-06-07 12:44:00.552668 - Bittrex API connection established
+INFO:root:2019-06-07 12:44:00.924325 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:44:14.298727 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:44:14.299724 - Finished running app.py
+INFO:root:2019-06-07 12:44:30.522840 - Started running app.py
+INFO:root:2019-06-07 12:44:30.525839 - Binance API connection established
+INFO:root:2019-06-07 12:44:30.527839 - Bittrex API connection established
+INFO:root:2019-06-07 12:44:30.899912 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:44:44.274027 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:44:44.274027 - Finished running app.py
+INFO:root:2019-06-07 12:45:00.553988 - Started running app.py
+INFO:root:2019-06-07 12:45:00.557988 - Binance API connection established
+INFO:root:2019-06-07 12:45:00.559987 - Bittrex API connection established
+INFO:root:2019-06-07 12:45:00.928659 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:45:14.215701 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:45:14.215701 - Finished running app.py
+INFO:root:2019-06-07 12:45:30.545921 - Started running app.py
+INFO:root:2019-06-07 12:45:30.548920 - Binance API connection established
+INFO:root:2019-06-07 12:45:30.551920 - Bittrex API connection established
+INFO:root:2019-06-07 12:45:30.939081 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:45:44.616067 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:45:44.616067 - Finished running app.py
+INFO:root:2019-06-07 12:46:00.555218 - Started running app.py
+INFO:root:2019-06-07 12:46:00.558217 - Binance API connection established
+INFO:root:2019-06-07 12:46:00.560217 - Bittrex API connection established
+INFO:root:2019-06-07 12:46:00.940888 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:46:13.026275 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:46:13.026275 - Finished running app.py
+INFO:root:2019-06-07 12:46:30.716128 - Started running app.py
+INFO:root:2019-06-07 12:46:30.720128 - Binance API connection established
+INFO:root:2019-06-07 12:46:30.723128 - Bittrex API connection established
+INFO:root:2019-06-07 12:46:31.098291 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:46:44.103835 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:46:44.103835 - Finished running app.py
+INFO:root:2019-06-07 12:47:00.548421 - Started running app.py
+INFO:root:2019-06-07 12:47:00.551421 - Binance API connection established
+INFO:root:2019-06-07 12:47:00.554421 - Bittrex API connection established
+INFO:root:2019-06-07 12:47:00.937397 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:47:10.494476 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:47:10.494476 - Finished running app.py
+INFO:root:2019-06-07 12:47:30.522144 - Started running app.py
+INFO:root:2019-06-07 12:47:30.525144 - Binance API connection established
+INFO:root:2019-06-07 12:47:30.528144 - Bittrex API connection established
+INFO:root:2019-06-07 12:47:30.900520 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:47:44.723356 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:47:44.723356 - Finished running app.py
+INFO:root:2019-06-07 12:48:00.535309 - Started running app.py
+INFO:root:2019-06-07 12:48:00.538309 - Binance API connection established
+INFO:root:2019-06-07 12:48:00.541309 - Bittrex API connection established
+INFO:root:2019-06-07 12:48:00.912023 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:48:14.497078 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:48:14.497078 - Finished running app.py
+INFO:root:2019-06-07 12:48:30.553177 - Started running app.py
+INFO:root:2019-06-07 12:48:30.556177 - Binance API connection established
+INFO:root:2019-06-07 12:48:30.558177 - Bittrex API connection established
+INFO:root:2019-06-07 12:48:30.929882 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:48:42.814746 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:48:42.814746 - Finished running app.py
+INFO:root:2019-06-07 12:49:00.651180 - Started running app.py
+INFO:root:2019-06-07 12:49:00.654179 - Binance API connection established
+INFO:root:2019-06-07 12:49:00.656178 - Bittrex API connection established
+INFO:root:2019-06-07 12:49:01.031103 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:49:14.441058 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:49:14.441058 - Finished running app.py
+INFO:root:2019-06-07 12:49:30.529334 - Started running app.py
+INFO:root:2019-06-07 12:49:30.532334 - Binance API connection established
+INFO:root:2019-06-07 12:49:30.534334 - Bittrex API connection established
+INFO:root:2019-06-07 12:49:30.906516 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:49:45.385009 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:49:45.385009 - Finished running app.py
+INFO:root:2019-06-07 12:50:00.543012 - Started running app.py
+INFO:root:2019-06-07 12:50:00.546012 - Binance API connection established
+INFO:root:2019-06-07 12:50:00.549012 - Bittrex API connection established
+INFO:root:2019-06-07 12:50:00.926646 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:50:15.116984 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:50:15.116984 - Finished running app.py
+INFO:root:2019-06-07 12:50:30.549429 - Started running app.py
+INFO:root:2019-06-07 12:50:30.552429 - Binance API connection established
+INFO:root:2019-06-07 12:50:30.554428 - Bittrex API connection established
+INFO:root:2019-06-07 12:50:30.930260 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:50:45.547649 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:50:45.547649 - Finished running app.py
+INFO:root:2019-06-07 12:51:00.542217 - Started running app.py
+INFO:root:2019-06-07 12:51:00.546217 - Binance API connection established
+INFO:root:2019-06-07 12:51:00.548216 - Bittrex API connection established
+INFO:root:2019-06-07 12:51:00.926840 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:51:12.534488 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:51:12.534488 - Finished running app.py
+INFO:root:2019-06-07 12:51:30.519163 - Started running app.py
+INFO:root:2019-06-07 12:51:30.524162 - Binance API connection established
+INFO:root:2019-06-07 12:51:30.526162 - Bittrex API connection established
+INFO:root:2019-06-07 12:51:30.972432 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:51:44.997265 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:51:44.998268 - Finished running app.py
+INFO:root:2019-06-07 12:52:00.542259 - Started running app.py
+INFO:root:2019-06-07 12:52:00.545258 - Binance API connection established
+INFO:root:2019-06-07 12:52:00.547258 - Bittrex API connection established
+INFO:root:2019-06-07 12:52:00.920232 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:52:12.921757 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:52:12.921757 - Finished running app.py
+INFO:root:2019-06-07 12:52:30.534604 - Started running app.py
+INFO:root:2019-06-07 12:52:30.537604 - Binance API connection established
+INFO:root:2019-06-07 12:52:30.539604 - Bittrex API connection established
+INFO:root:2019-06-07 12:52:30.916041 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:52:43.770788 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:52:43.770788 - Finished running app.py
+INFO:root:2019-06-07 12:53:00.535769 - Started running app.py
+INFO:root:2019-06-07 12:53:00.538769 - Binance API connection established
+INFO:root:2019-06-07 12:53:00.540769 - Bittrex API connection established
+INFO:root:2019-06-07 12:53:00.910410 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:53:16.113483 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:53:16.113483 - Finished running app.py
+INFO:root:2019-06-07 12:53:30.538420 - Started running app.py
+INFO:root:2019-06-07 12:53:30.541419 - Binance API connection established
+INFO:root:2019-06-07 12:53:30.543419 - Bittrex API connection established
+INFO:root:2019-06-07 12:53:30.915398 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:53:44.314516 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:53:44.314516 - Finished running app.py
+INFO:root:2019-06-07 12:54:00.547603 - Started running app.py
+INFO:root:2019-06-07 12:54:00.550603 - Binance API connection established
+INFO:root:2019-06-07 12:54:00.552603 - Bittrex API connection established
+INFO:root:2019-06-07 12:54:00.926133 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:54:14.706629 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:54:14.706629 - Finished running app.py
+INFO:root:2019-06-07 12:54:30.526276 - Started running app.py
+INFO:root:2019-06-07 12:54:30.529275 - Binance API connection established
+INFO:root:2019-06-07 12:54:30.532275 - Bittrex API connection established
+INFO:root:2019-06-07 12:54:30.906741 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:54:44.429943 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:54:44.430941 - Finished running app.py
+INFO:root:2019-06-07 12:55:00.533032 - Started running app.py
+INFO:root:2019-06-07 12:55:00.536032 - Binance API connection established
+INFO:root:2019-06-07 12:55:00.539031 - Bittrex API connection established
+INFO:root:2019-06-07 12:55:00.915943 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:55:13.530690 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:55:13.530690 - Finished running app.py
+INFO:root:2019-06-07 12:55:30.524010 - Started running app.py
+INFO:root:2019-06-07 12:55:30.529010 - Binance API connection established
+INFO:root:2019-06-07 12:55:30.531009 - Bittrex API connection established
+INFO:root:2019-06-07 12:55:30.901562 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:55:43.664741 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:55:43.664741 - Finished running app.py
+INFO:root:2019-06-07 12:56:00.551740 - Started running app.py
+INFO:root:2019-06-07 12:56:00.554740 - Binance API connection established
+INFO:root:2019-06-07 12:56:00.556740 - Bittrex API connection established
+INFO:root:2019-06-07 12:56:00.927476 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:56:12.579653 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:56:12.579653 - Finished running app.py
+INFO:root:2019-06-07 12:56:30.526606 - Started running app.py
+INFO:root:2019-06-07 12:56:30.530605 - Binance API connection established
+INFO:root:2019-06-07 12:56:30.532606 - Bittrex API connection established
+INFO:root:2019-06-07 12:56:30.904995 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:56:44.061662 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:56:44.061662 - Finished running app.py
+INFO:root:2019-06-07 12:57:00.611767 - Started running app.py
+INFO:root:2019-06-07 12:57:00.618768 - Binance API connection established
+INFO:root:2019-06-07 12:57:00.621767 - Bittrex API connection established
+INFO:root:2019-06-07 12:57:00.997113 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:57:14.375266 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:57:14.375266 - Finished running app.py
+INFO:root:2019-06-07 12:57:30.562867 - Started running app.py
+INFO:root:2019-06-07 12:57:30.566866 - Binance API connection established
+INFO:root:2019-06-07 12:57:30.569867 - Bittrex API connection established
+INFO:root:2019-06-07 12:57:30.941098 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:57:43.717722 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:57:43.717722 - Finished running app.py
+INFO:root:2019-06-07 12:58:00.541808 - Started running app.py
+INFO:root:2019-06-07 12:58:00.544809 - Binance API connection established
+INFO:root:2019-06-07 12:58:00.546809 - Bittrex API connection established
+INFO:root:2019-06-07 12:58:01.179223 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:58:15.319783 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:58:15.319783 - Finished running app.py
+INFO:root:2019-06-07 12:58:30.529042 - Started running app.py
+INFO:root:2019-06-07 12:58:30.532042 - Binance API connection established
+INFO:root:2019-06-07 12:58:30.534042 - Bittrex API connection established
+INFO:root:2019-06-07 12:58:30.904881 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:58:44.817602 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:58:44.817602 - Finished running app.py
+INFO:root:2019-06-07 12:59:00.561511 - Started running app.py
+INFO:root:2019-06-07 12:59:00.564511 - Binance API connection established
+INFO:root:2019-06-07 12:59:00.567511 - Bittrex API connection established
+INFO:root:2019-06-07 12:59:00.945832 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:59:14.133549 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:59:14.133549 - Finished running app.py
+INFO:root:2019-06-07 12:59:30.842637 - Started running app.py
+INFO:root:2019-06-07 12:59:30.845635 - Binance API connection established
+INFO:root:2019-06-07 12:59:30.848634 - Bittrex API connection established
+INFO:root:2019-06-07 12:59:31.224601 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 12:59:44.230616 - Committed all SQL statements inserting pair spreads
+INFO:root:2019-06-07 12:59:44.230616 - Finished running app.py

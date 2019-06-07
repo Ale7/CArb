@@ -1,0 +1,44 @@
+INFO:root:2019-06-07 13:15:17.816595 - Started running data.py
+INFO:root:2019-06-07 13:15:18.240019 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:15:18.994810 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:15:19.001810 - Prepared all data subplots
+INFO:root:2019-06-07 13:16:11.514027 - Displaying data subplots
+INFO:root:2019-06-07 13:16:11.514027 - Finished running data.py
+INFO:root:2019-06-07 13:19:27.190827 - Started running data.py
+INFO:root:2019-06-07 13:19:27.565828 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:19:28.143949 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:19:28.143949 - Prepared all data subplots
+INFO:root:2019-06-07 13:20:03.929806 - Started running data.py
+INFO:root:2019-06-07 13:20:04.313917 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:20:04.904991 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:20:04.908991 - Prepared all data subplots
+INFO:root:2019-06-07 13:20:11.046404 - Displaying data subplots
+INFO:root:2019-06-07 13:20:11.046404 - Finished running data.py
+INFO:root:2019-06-07 13:20:33.231951 - Started running data.py
+INFO:root:2019-06-07 13:20:33.614599 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:20:34.218554 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:20:34.223553 - Prepared all data subplots
+INFO:root:2019-06-07 13:20:40.812921 - Displaying data subplots
+INFO:root:2019-06-07 13:20:40.813921 - Finished running data.py
+INFO:root:2019-06-07 13:20:55.194300 - Started running data.py
+INFO:root:2019-06-07 13:20:55.569878 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:20:56.136579 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:20:56.140578 - Prepared all data subplots
+INFO:root:2019-06-07 13:22:47.563624 - Displaying data subplots
+INFO:root:2019-06-07 13:22:47.563624 - Finished running data.py
+INFO:root:2019-06-07 13:23:00.685554 - Started running data.py
+INFO:root:2019-06-07 13:23:01.075029 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:23:01.643223 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:23:01.648221 - Prepared all data subplots
+INFO:root:2019-06-07 13:25:06.921771 - Started running data.py
+INFO:root:2019-06-07 13:25:07.296770 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:25:07.874891 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:25:07.874891 - Prepared all data subplots
+INFO:root:2019-06-07 13:25:10.203006 - Displaying data subplots
+INFO:root:2019-06-07 13:25:10.203006 - Finished running data.py
+INFO:root:2019-06-07 13:25:34.921494 - Started running data.py
+INFO:root:2019-06-07 13:25:35.284359 - Connected to MySQL database 'alecwood_crypto'
+INFO:root:2019-06-07 13:25:35.862479 - Fetched all rows from 'binance_bittrex_spreads' table
+INFO:root:2019-06-07 13:25:35.862479 - Prepared all data subplots
+INFO:root:2019-06-07 13:25:42.938438 - Displaying data subplots
+INFO:root:2019-06-07 13:25:42.938438 - Finished running data.py
