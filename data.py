@@ -16,6 +16,9 @@ result = mycursor.fetchall()
 log("Fetched all rows from 'binance_bittrex_spreads' table")
 
 charts = {}
+hist = []
+
+over_1_spread = 0
 
 for pair in arb_pairs:
     charts[pair] = {"x": [], "y": []}
@@ -28,11 +31,18 @@ for r in result:
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
 
+    if spread >= 0.375:
+        over_1_spread += 1
+
+    hist.append(spread)
+
 log("Prepared all data subplots")
+
+print(over_1_spread)
 
 plt.style.use('dark_background')
 # Changes windows title
-fig = plt.figure(num='CArb')
+fig = plt.figure(num='CArb Charts')
 date_fmt = '%H:%M'
 date_formatter = mdate.DateFormatter(date_fmt)
 # Makes window open full size
@@ -54,7 +64,17 @@ for i in range(1, 31):
     ax.tick_params(axis='both', which='minor', labelsize=6)
 
 plt.subplots_adjust(left=0.02, right=0.98, bottom=0.05, top=0.95, wspace=0.2, hspace=0.4)
-plt.show()
 log("Displaying data subplots")
 
+fig1 = plt.figure(num='CArb Distribution')
+# Makes window open full size
+mng = plt.get_current_fig_manager()
+mng.window.state('zoomed')
+
+num_bins = 500
+n, bins, patches = plt.hist(hist, num_bins, facecolor='green', alpha=0.5)
+log("Displaying distribution plot")
+plt.show()
+
 log("Finished running data.py")
+
