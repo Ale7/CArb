@@ -1,0 +1,11 @@
+Worst case fees:
+
+Binance: 0.075%
+
+Bittrex: 0.25%
+
+Kraken: 0.26%
+
+BINA/TREX = 0.325%
+BINA/KRAK = 0.335%
+TREX/KRAK = 0.51%

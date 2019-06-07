@@ -1,6 +1,7 @@
 from research import *
 import logging
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdate
 
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
@@ -27,25 +28,21 @@ for r in result:
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
 
-print(charts)
+fig = plt.figure()
+date_fmt = '%H:%M'
+date_formatter = mdate.DateFormatter(date_fmt)
 
-fig, ax = plt.subplots(10, 3)
+for i in range(1, 31):
+    ax = fig.add_subplot(5, 6, i)
+    pair = arb_pairs[i - 1]
+    secs = mdate.epoch2num(charts[pair].get("x"))
+    ax.plot(secs, charts[pair].get("y"), color="green")
+    ax.set_title(pair, size=8)
+    ax.xaxis.set_major_formatter(date_formatter)
+    ax.tick_params(axis='both', which='major', labelsize=6)
+    ax.tick_params(axis='both', which='minor', labelsize=6)
 
-pair_index = 0
-
-i = 0
-while i < 10:
-    j = 0
-    while j < 3:
-        pair = arb_pairs[pair_index]
-        chart = ax[i][j]
-        chart.set_title(pair, fontsize=8)
-        chart.plot(charts[pair].get("x"), charts[pair].get("y"))
-        pair_index += 1
-        j += 1
-    i += 1
-
-plt.grid(True)
+plt.subplots_adjust(left=0.05, right=0.95, bottom=0.05, top=0.95, wspace=0.2, hspace=0.4)
 plt.show()
 
 logging.info(timestamp() + f" - Finished running data.py")
