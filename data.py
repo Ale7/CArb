@@ -5,15 +5,15 @@ import matplotlib.dates as mdate
 
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
-logging.info(timestamp() + f" - Started running data.py")
+log("Started running data.py")
 
 mydb = mysql_connect('67.225.225.24', 'alecwood_user198', 'pass198', 'alecwood_crypto')
-logging.info(timestamp() + " - Connected to MySQL database 'alecwood_crypto'")
+log("Connected to MySQL database 'alecwood_crypto'")
 
 mycursor = mydb.cursor()
 mycursor.execute("SELECT * FROM binance_bittrex_spreads")
 result = mycursor.fetchall()
-logging.info(timestamp() + " - Fetched all rows from 'binance_bittrex_spreads' table")
+log("Fetched all rows from 'binance_bittrex_spreads' table")
 
 charts = {}
 
@@ -27,6 +27,8 @@ for r in result:
 
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
+
+log("Prepared all data subplots")
 
 plt.style.use('dark_background')
 fig = plt.figure()
@@ -49,5 +51,6 @@ for i in range(1, 31):
 
 plt.subplots_adjust(left=0.02, right=0.98, bottom=0.05, top=0.95, wspace=0.2, hspace=0.4)
 plt.show()
+log("Displaying data subplots")
 
-logging.info(timestamp() + f" - Finished running data.py")
+log("Finished running data.py")
