@@ -1,0 +1,2 @@
+# CArb
+Cryptocurrency arbitrage bot
