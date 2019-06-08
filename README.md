@@ -1,4 +1,4 @@
 # CArb
-**C**ryptocurrency **Arb**itrage
+## **C**ryptocurrency **Arb**itrage
 
 Currently under construction
