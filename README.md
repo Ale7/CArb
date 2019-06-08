@@ -1,2 +1,4 @@
 # CArb
-Cryptocurrency arbitrage bot
+**C**ryptocurrency **Arb**itrage
+
+Currently under construction
