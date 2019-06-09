@@ -16,9 +16,8 @@ result = mycursor.fetchall()
 log("Fetched all rows from 'binance_bittrex_spreads' table")
 
 charts = {}
-hist = []
 
-for pair in arb_pairs:
+for pair in research_pairs:
     charts[pair] = {"x": [], "y": []}
 
 for r in result:
@@ -42,7 +41,7 @@ mng.window.state('zoomed')
 
 for i in range(1, 31):
     ax = fig.add_subplot(5, 6, i)
-    pair = arb_pairs[i - 1]
+    pair = research_pairs[i - 1]
     secs = mdate.epoch2num(charts[pair].get("x"))
     ax.plot(secs, charts[pair].get("y"), color="#C0C0C0", linewidth=1)
     ax.axhline(y=0.325, color='g', linestyle="dashed", linewidth=1)
