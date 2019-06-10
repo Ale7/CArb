@@ -1,7 +1,7 @@
 from research import *
 
 BOOK_DEPTH = 5
-PROFIT_PERCENT = 0.2
+PROFIT_PERCENT = 0.325
 
 
 def is_opportunity(low_book, high_book, req):
@@ -10,9 +10,6 @@ def is_opportunity(low_book, high_book, req):
     return False
 
 
-# bids1[0][0] --> highest bid price on book1
-# asks2[0][0] --> lowest ask price on book2
-# bids2[2][1] --> 3rd highest bid volume on book 2
 def find_quantity(book1, book2, floor):
     qty = 0
 
