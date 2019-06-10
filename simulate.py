@@ -1,6 +1,7 @@
 from research import *
 
-BOOK_DEPTH = 20
+BOOK_DEPTH = 5
+PROFIT_PERCENT = 0.2
 
 simulate_pairs = ['ETH/BTC', 'RVN/BTC']
 
@@ -12,34 +13,18 @@ binance = get_binance_connection(config.binance_api_key, config.binance_api_secr
 bittrex = get_bittrex_connection(config.bittrex_api_key, config.bittrex_api_secret)
 
 database = mysql_connect(config.mysql_host, config.mysql_username, config.mysql_password, config.mysql_db)
-
 mycursor = database.cursor()
+
 exchanges = [binance, bittrex]
 
-sql_binance_bittrex_spreads = "INSERT INTO binance_bittrex_spreads (pair, percent_spread, time) VALUES (%s, %s, %s)"
+binance_book = {
+    "bids": [[0.04, 5.65], [0.0395, 1.05], [0.0393, 0.05], [0.039, 3.85], [0.038, 12.5]],
+    "asks": [[0.0415, 3.25], [0.0415, 1.12], [0.043, 2.05], [0.0442, 8.5], [0.0447, 0.01]]
+}
 
-transact_costs = []
+bittrex_book = {
+    "bids": [[0.0376, 14.5], [0.0375, 0.02], [0.037, 1.15], [0.037, 2.05], [0.0365, 2.05]],
+    "asks": [[0.0385, 1.2], [0.0394, 2.0], [0.0399, 0.05], [0.0425, 4.57], [0.0440, 1.12]]
+}
 
-while True:
 
-    transact_costs.clear()
-    for pair in simulate_pairs:
-        spread = find_spread(exchanges, pair)
-
-        if spread > -1:
-            for ex in exchanges:
-                book = ex.fetch_order_book(pair, BOOK_DEPTH)
-                book = prepare_book(book)
-                transact_costs.append(cost(pair, book, 1))
-
-    sell_0 = transact_costs[0][2]
-    buy_0 = transact_costs[0][3]
-    profit_0 = sell_0 - buy_0
-    print(profit_0)
-
-    sell_1 = transact_costs[0][2]
-    buy_1 = transact_costs[1][3]
-    profit_1 = sell_1 - buy_1
-    print(profit_1)
-
-    time.sleep(3)
