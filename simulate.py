@@ -3,6 +3,48 @@ from research import *
 BOOK_DEPTH = 5
 PROFIT_PERCENT = 0.2
 
+
+def is_opportunity(low_book, high_book, req):
+    if low_book["asks"][0][0] * (100 + req) / 100 < high_book["bids"][0][0]:
+        return True
+    return False
+
+
+# bids1[0][0] --> highest bid price on book1
+# asks2[0][0] --> lowest ask price on book2
+# bids2[2][1] --> 3rd highest bid volume on book 2
+def find_quantity(book1, book2, floor):
+    if book1["bids"][0][0] > book2["asks"][0][0]:
+        low_book = book2
+        high_book = book1
+    elif book2["bids"][0][0] > book1["asks"][0][0]:
+        low_book = book1
+        high_book = book2
+    else:
+        return -1
+
+    print(f"low book: {low_book}")
+    print(f"high book: {high_book}")
+
+    quantity = 0
+
+    if is_opportunity(low_book, high_book, floor):
+        if low_book["asks"][0][1] > high_book["bids"][0][1]:
+            # the lowest ask is larger in size than the highest bid
+            q = high_book["bids"][0][1]
+            del high_book["bids"][0]
+            low_book["asks"][0][1] -= q
+        else:
+            # the lowest ask is smaller in size than the highest bid
+            q = low_book["asks"][0][1]
+            del low_book["asks"][0]
+            high_book["bids"][0][1] -= q
+        quantity += q
+
+    print(f"low book: {low_book}")
+    print(f"high book: {high_book}")
+    print(f"quantity: {quantity}")
+
 simulate_pairs = ['ETH/BTC', 'RVN/BTC']
 
 logging.basicConfig(filename='SimulateLogging.log', level=logging.INFO)
@@ -27,4 +69,4 @@ bittrex_book = {
     "asks": [[0.0385, 1.2], [0.0394, 2.0], [0.0399, 0.05], [0.0425, 4.57], [0.0440, 1.12]]
 }
 
-
+find_quantity(binance_book, bittrex_book, PROFIT_PERCENT)
