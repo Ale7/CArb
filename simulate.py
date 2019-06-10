@@ -14,6 +14,8 @@ def is_opportunity(low_book, high_book, req):
 # asks2[0][0] --> lowest ask price on book2
 # bids2[2][1] --> 3rd highest bid volume on book 2
 def find_quantity(book1, book2, floor):
+    qty = 0
+
     if book1["bids"][0][0] > book2["asks"][0][0]:
         low_book = book2
         high_book = book1
@@ -23,27 +25,22 @@ def find_quantity(book1, book2, floor):
     else:
         return -1
 
-    print(f"low book: {low_book}")
-    print(f"high book: {high_book}")
-
-    quantity = 0
-
-    if is_opportunity(low_book, high_book, floor):
-        if low_book["asks"][0][1] > high_book["bids"][0][1]:
-            # the lowest ask is larger in size than the highest bid
-            q = high_book["bids"][0][1]
-            del high_book["bids"][0]
-            low_book["asks"][0][1] -= q
+    while True:
+        if is_opportunity(low_book, high_book, floor):
+            if low_book["asks"][0][1] > high_book["bids"][0][1]:
+                q = high_book["bids"][0][1]
+                del high_book["bids"][0]
+                low_book["asks"][0][1] -= q
+            else:
+                q = low_book["asks"][0][1]
+                del low_book["asks"][0]
+                high_book["bids"][0][1] -= q
+            qty += q
         else:
-            # the lowest ask is smaller in size than the highest bid
-            q = low_book["asks"][0][1]
-            del low_book["asks"][0]
-            high_book["bids"][0][1] -= q
-        quantity += q
+            break
 
-    print(f"low book: {low_book}")
-    print(f"high book: {high_book}")
-    print(f"quantity: {quantity}")
+    return qty
+
 
 simulate_pairs = ['ETH/BTC', 'RVN/BTC']
 
@@ -69,4 +66,19 @@ bittrex_book = {
     "asks": [[0.0385, 1.2], [0.0394, 2.0], [0.0399, 0.05], [0.0425, 4.57], [0.0440, 1.12]]
 }
 
-find_quantity(binance_book, bittrex_book, PROFIT_PERCENT)
+quantity = find_quantity(binance_book, bittrex_book, PROFIT_PERCENT)
+
+binance_book = {
+    "bids": [[0.04, 5.65], [0.0395, 1.05], [0.0393, 0.05], [0.039, 3.85], [0.038, 12.5]],
+    "asks": [[0.0415, 3.25], [0.0415, 1.12], [0.043, 2.05], [0.0442, 8.5], [0.0447, 0.01]]
+}
+
+bittrex_book = {
+    "bids": [[0.0376, 14.5], [0.0375, 0.02], [0.037, 1.15], [0.037, 2.05], [0.0365, 2.05]],
+    "asks": [[0.0385, 1.2], [0.0394, 2.0], [0.0399, 0.05], [0.0425, 4.57], [0.0440, 1.12]]
+}
+
+buy = cost("ETH/BTC", bittrex_book, quantity)
+sell = cost("ETH/BTC", binance_book, quantity)
+profit = round(sell[2] - buy[3], 8)
+print(f"Profit: {profit}")
