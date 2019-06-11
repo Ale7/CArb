@@ -2,12 +2,30 @@ from research import *
 import threading
 
 FREQUENCY = 15.0
+PROFIT = 0.375
+BOOK_DEPTH = 20
 
 
 def arbitrage():
     threading.Timer(FREQUENCY, arbitrage).start()
-    for ex in exchanges:
-        get_nonzero_balances(ex.fetch_balance())
+
+    # ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
+    # ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
+
+    # common = list(set(ex1_balances).intersection(ex2_balances))
+    common = ["KMD", "BTC"]
+
+    for currency in common:
+        if currency == "BTC":
+            continue
+        currency += "/BTC"
+
+        book1 = exchanges[0].fetch_order_book(currency, BOOK_DEPTH)
+        book2 = exchanges[1].fetch_order_book(currency, BOOK_DEPTH)
+
+        x = find_quantity(book1, book2, PROFIT)
+
+        print(x)
 
 
 logging.basicConfig(filename='BotLogging.log', level=logging.INFO)
