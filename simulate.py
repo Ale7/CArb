@@ -1,7 +1,7 @@
 from research import *
 
 BOOK_DEPTH = 5
-PROFIT_PERCENT = 0.325
+PROFIT_PERCENT = 0.5
 
 logging.basicConfig(filename='SimulateLogging.log', level=logging.INFO)
 
