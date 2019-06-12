@@ -2,12 +2,12 @@ from research import *
 import threading
 
 FREQUENCY = 15.0
-PROFIT = 0.375
+PROFIT = 2
 BOOK_DEPTH = 20
 
 
 def arbitrage():
-    threading.Timer(FREQUENCY, arbitrage).start()
+    # threading.Timer(FREQUENCY, arbitrage).start()
 
     # ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
     # ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
@@ -23,9 +23,12 @@ def arbitrage():
         book1 = exchanges[0].fetch_order_book(currency, BOOK_DEPTH)
         book2 = exchanges[1].fetch_order_book(currency, BOOK_DEPTH)
 
-        x = find_quantity(book1, book2, PROFIT)
+        x = find_order_info(book1, book2, PROFIT)
 
         print(x)
+
+        # place limit buy order on LOW exchange: quantity = x[0], price = x[1]
+        # place limit sell order on HIGH exchange: quantity = x[0], price = x[2]
 
 
 logging.basicConfig(filename='BotLogging.log', level=logging.INFO)

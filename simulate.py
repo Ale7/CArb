@@ -27,7 +27,7 @@ bittrex_book = {
     "asks": [[0.0385, 1.2], [0.0394, 2.0], [0.0399, 0.05], [0.0425, 4.57], [0.0440, 1.12]]
 }
 
-quantity = find_quantity(binance_book, bittrex_book, PROFIT_PERCENT)
+quantity = find_order_info(binance_book, bittrex_book, PROFIT_PERCENT)[0]
 
 binance_book = {
     "bids": [[0.04, 5.65], [0.0395, 1.05], [0.0393, 0.05], [0.039, 3.85], [0.038, 12.5]],
