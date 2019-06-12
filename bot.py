@@ -2,13 +2,13 @@ from research import *
 import threading
 
 FREQUENCY = 15
-PROFIT = 0.1
+PROFIT = 0.5
 BOOK_DEPTH = 20
 
 
 def arbitrage():
     threading.Timer(FREQUENCY, arbitrage).start()
-    log("arbitrage() called")
+    log("Check for arbitrage opportunities")
 
     ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
     log(f"ex1_balances: {ex1_balances}")

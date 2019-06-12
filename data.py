@@ -8,7 +8,6 @@ logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 log("Started running data.py")
 
 mydb = mysql_connect('67.225.225.24', 'alecwood_user198', 'pass198', 'alecwood_crypto')
-log("Connected to MySQL database 'alecwood_crypto'")
 
 mycursor = mydb.cursor()
 mycursor.execute("SELECT * FROM binance_bittrex_spreads")
@@ -31,11 +30,9 @@ for r in result:
 log("Prepared all data for chart subplots")
 
 plt.style.use('dark_background')
-# Changes windows title
 fig = plt.figure(num='CArb Charts')
 date_fmt = '%H:%M'
 date_formatter = mdate.DateFormatter(date_fmt)
-# Makes window open full size
 mng = plt.get_current_fig_manager()
 mng.window.state('zoomed')
 
@@ -56,7 +53,6 @@ for i in range(1, 31):
 plt.subplots_adjust(left=0.02, right=0.98, bottom=0.05, top=0.95, wspace=0.2, hspace=0.4)
 log("Displaying data subplots")
 
-# Makes window open full size
 mng = plt.get_current_fig_manager()
 mng.window.state('zoomed')
 plt.show()
