@@ -4,16 +4,16 @@ import threading
 FREQUENCY = 60
 PROFIT = 0.375
 BOOK_DEPTH = 20
+ORDERS_PLACED = 0
 
 
 def arbitrage():
     threading.Timer(FREQUENCY, arbitrage).start()
 
-    # ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
-    # ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
+    ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
+    ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
 
-    # common = list(set(ex1_balances).intersection(ex2_balances))
-    common = ["KMD", "BTC"]
+    common = list(set(ex1_balances).intersection(ex2_balances))
 
     for currency in common:
         if currency == "BTC":
@@ -28,21 +28,28 @@ def arbitrage():
         low_exchange = spread_info[0]
         high_exchange = spread_info[1]
         if low_exchange.id == "bittrex":
-            symbol = currency
-            t = "limit"
-            side = "buy"
-            amount = book_data[0]
-            price = book_data[1]
             params = {
                 "TimeInEffect": "IMMEDIATE_OR_CANCEL"
             }
-            side_h = "sell"
-            price_h = book_data[2]
             params_h = {
                 "timeInForce": "IOC"
             }
-            low_exchange.create_order(symbol, t, side, amount, price, params)
-            high_exchange.create_order(symbol, t, side_h, amount, price_h, params_h)
+        elif low_exchange.id == "binance":
+            params = {
+                "timeInForce": "IOC"
+            }
+            params_h = {
+                "TimeInEffect": "IMMEDIATE_OR_CANCEL"
+            }
+        symbol = currency
+        t = "limit"
+        side = "buy"
+        amount = book_data[0]
+        price = book_data[1]
+        side_h = "sell"
+        price_h = book_data[2]
+        low_exchange.create_order(symbol, t, side, amount, price, params)
+        high_exchange.create_order(symbol, t, side_h, amount, price_h, params_h)
 
 
 logging.basicConfig(filename='BotLogging.log', level=logging.INFO)
