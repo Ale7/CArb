@@ -8,25 +8,22 @@ BOOK_DEPTH = 20
 
 def arbitrage():
     threading.Timer(FREQUENCY, arbitrage).start()
-    log("Check for arbitrage opportunities")
+    log("Checking for arbitrage opportunities")
 
     ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
-    log(f"ex1_balances: {ex1_balances}")
     ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
-    log(f"ex2_balances: {ex2_balances}")
 
     common = list(set(ex1_balances).intersection(ex2_balances))
-    log(f"common: {common}")
+    log(f"Found common non-zero balance currencies: {common}")
 
     for currency in common:
-        log(f"currency: {currency}")
         if currency == "BTC":
             continue
-        currency += "/BTC"
+        pair = currency + "/BTC"
 
-        book1 = exchanges[0].fetch_order_book(currency, BOOK_DEPTH)
+        book1 = exchanges[0].fetch_order_book(pair, BOOK_DEPTH)
         log(f"book1: {book1}")
-        book2 = exchanges[1].fetch_order_book(currency, BOOK_DEPTH)
+        book2 = exchanges[1].fetch_order_book(pair, BOOK_DEPTH)
         log(f"book2: {book2}")
         book_data = find_order_info(book1, book2, PROFIT)
         log(f"book_data: {book_data}")
@@ -34,12 +31,13 @@ def arbitrage():
         if int(book_data[1]) == -1 or int(book_data[2]) == -1:
             continue
 
-        spread_info = find_spread(exchanges, currency)
+        spread_info = find_spread(exchanges, pair)
         log(f"spread_info: {spread_info}")
         low_exchange = spread_info[0]
         log(f"low_exchange: {low_exchange}")
         high_exchange = spread_info[1]
         log(f"high_exchange: {high_exchange}")
+        params = params_h = ""
 
         if low_exchange.id == "bittrex":
             params = {
@@ -56,10 +54,13 @@ def arbitrage():
                 "TimeInEffect": "IMMEDIATE_OR_CANCEL"
             }
 
-        symbol = currency
+        symbol = pair
         t = "limit"
         side = "buy"
-        amount = book_data[0]
+
+        lowest_bal = min(ex1_balances[currency], ex2_balances[currency])
+        amount = min(book_data[0], lowest_bal)
+
         price = book_data[1]
 
         side_h = "sell"
@@ -69,6 +70,9 @@ def arbitrage():
         low_exchange.create_order(symbol, t, side, amount, price, params)
         log(f"Attempting to place order: {symbol}, {t}, {side_h}, {amount}, {price_h}, {params_h}")
         high_exchange.create_order(symbol, t, side_h, amount, price_h, params_h)
+
+        log("Finished running bot.py")
+        exit()
 
 
 logging.basicConfig(filename='BotLogging.log', level=logging.INFO)
