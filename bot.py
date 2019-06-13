@@ -1,13 +1,14 @@
 from research import *
 import threading
 
-FREQUENCY = 4
-PROFIT = 0.5
+FREQUENCY = 5
+PROFIT = 1
 BOOK_DEPTH = 20
 
 
 def arbitrage():
-    threading.Timer(FREQUENCY, arbitrage).start()
+    timer = threading.Timer(FREQUENCY, arbitrage)
+    timer.start()
     log("Checking for arbitrage opportunities")
 
     ex1_balances = get_nonzero_balances(exchanges[0].fetch_balance())
@@ -65,8 +66,9 @@ def arbitrage():
         log(f"Attempting to place order: {symbol}, {t}, {side_h}, {amount}, {price_h}, {params_h}")
         high_exchange.create_order(symbol, t, side_h, amount, price_h, params_h)
 
-        log("Finished running bot.py")
-        exit()
+        if len(common) < 2:
+            timer.cancel()
+            return
 
 
 logging.basicConfig(filename='BotLogging.log', level=logging.INFO)
@@ -82,3 +84,4 @@ mycursor = database.cursor()
 exchanges = [binance, bittrex]
 
 arbitrage()
+log("Finished running bot.py")
