@@ -22,46 +22,66 @@ def log(level, message):
 
 
 def mysql_connect(host, username, passwd, db):
-    database = mysql.connector.connect(
-        host=host,
-        user=username,
-        passwd=passwd,
-        db=db
-    )
-    log("INFO", f"Connected to MySQL database '{db}'")
+    try:
+        database = mysql.connector.connect(
+            host=host,
+            user=username,
+            passwd=passwd,
+            db=db
+        )
+        log("INFO", f"Successfully connected to MySQL database '{db}'")
+        return database
+    except Exception as e:
+        log("ERROR", f"Failed to connect to MySQL database '{db}': {e}")
 
-    return database
+    return
 
 
 def btc_price(exchange):
-    btc = exchange.fetch_ticker("BTC/USDT").get("last")
-    log("INFO", f"Found current Bitcoin price: {btc}")
+    try:
+        btc = exchange.fetch_ticker("BTC/USDT").get("last")
+        log("INFO", f"Found current Bitcoin price on {exchange.id}: {btc}")
+        return btc
+    except Exception as e:
+        log("ERROR", f"Failed to find current Bitcoin price on {exchange.id}: {e}")
 
-    return btc
+    return
 
 
 def eth_price(exchange):
-    eth = exchange.fetch_ticker("ETH/USDT").get("last")
-    log("INFO", f"Found current Ethereum price: {eth}")
+    try:
+        eth = exchange.fetch_ticker("ETH/USDT").get("last")
+        log("INFO", f"Found current Ethereum price on {exchange.id}: {eth}")
+        return eth
+    except Exception as e:
+        log("ERROR", f"Failed to find current Ethereum price on {exchange.id}: {e}")
 
-    return eth
+    return
 
 
 def get_binance_connection(key, secret):
-    binance = ccxt.binance({
-        'apiKey': key,
-        'secret': secret
-    })
-    log("INFO", "Binance API connection established")
+    try:
+        binance = ccxt.binance({
+            'apiKey': key,
+            'secret': secret
+        })
+        log("INFO", "Successfully established connection to Binance API")
+        return binance
+    except Exception as e:
+        log("ERROR", f"Failed to establish connection to Binance API: {e}")
 
-    return binance
+    return
 
 
 def get_bittrex_connection(key, secret):
-    bittrex = ccxt.bittrex({
-        'apiKey': key,
-        'secret': secret
-    })
-    log("INFO", "Bittrex API connection established")
+    try:
+        bittrex = ccxt.bittrex({
+            'apiKey': key,
+            'secret': secret
+        })
+        log("INFO", "Successfully established connection to Bittrex API")
+        return bittrex
+    except Exception as e:
+        log("ERROR", f"Failed to establish connection to bittrex API: {e}")
 
-    return bittrex
+    return
