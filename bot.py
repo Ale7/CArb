@@ -1,7 +1,7 @@
 from research import *
 import threading
 
-FREQUENCY = 15
+FREQUENCY = 4
 PROFIT = 0.5
 BOOK_DEPTH = 20
 
@@ -14,7 +14,6 @@ def arbitrage():
     ex2_balances = get_nonzero_balances(exchanges[1].fetch_balance())
 
     common = list(set(ex1_balances).intersection(ex2_balances))
-    log(f"Found common non-zero balance currencies: {common}")
 
     for currency in common:
         if currency == "BTC":
@@ -22,21 +21,16 @@ def arbitrage():
         pair = currency + "/BTC"
 
         book1 = exchanges[0].fetch_order_book(pair, BOOK_DEPTH)
-        log(f"book1: {book1}")
         book2 = exchanges[1].fetch_order_book(pair, BOOK_DEPTH)
-        log(f"book2: {book2}")
         book_data = find_order_info(book1, book2, PROFIT)
-        log(f"book_data: {book_data}")
 
         if int(book_data[1]) == -1 or int(book_data[2]) == -1:
+            find_spread(exchanges, pair)
             continue
 
         spread_info = find_spread(exchanges, pair)
-        log(f"spread_info: {spread_info}")
         low_exchange = spread_info[0]
-        log(f"low_exchange: {low_exchange}")
         high_exchange = spread_info[1]
-        log(f"high_exchange: {high_exchange}")
         params = params_h = ""
 
         if low_exchange.id == "bittrex":
@@ -58,8 +52,8 @@ def arbitrage():
         t = "limit"
         side = "buy"
 
-        lowest_bal = min(ex1_balances[currency], ex2_balances[currency])
-        amount = min(book_data[0], lowest_bal)
+        lowest_bal = float(min(ex1_balances[currency], ex2_balances[currency]))
+        amount = min(float(book_data[0]), lowest_bal)
 
         price = book_data[1]
 
