@@ -5,14 +5,14 @@ import matplotlib.dates as mdate
 
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
-log("Started running data.py")
+log("INFO", "Started running data.py")
 
 mydb = mysql_connect('67.225.225.24', 'alecwood_user198', 'pass198', 'alecwood_crypto')
 
 mycursor = mydb.cursor()
 mycursor.execute("SELECT * FROM binance_bittrex_spreads")
 result = mycursor.fetchall()
-log("Fetched all rows from 'binance_bittrex_spreads' table")
+log("INFO", "Fetched all rows from 'binance_bittrex_spreads' table")
 
 charts = {}
 
@@ -27,7 +27,7 @@ for r in result:
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
 
-log("Prepared all data for chart subplots")
+log("INFO", "Prepared all data for chart subplots")
 
 plt.style.use('dark_background')
 fig = plt.figure(num='CArb Charts')
@@ -51,10 +51,10 @@ for i in range(1, 31):
     ax.tick_params(axis='both', which='minor', labelsize=6)
 
 plt.subplots_adjust(left=0.02, right=0.98, bottom=0.05, top=0.95, wspace=0.2, hspace=0.4)
-log("Displaying data subplots")
+log("INFO", "Displaying data subplots")
 
 mng = plt.get_current_fig_manager()
 mng.window.state('zoomed')
 plt.show()
 
-log("Finished running data.py")
+log("INFO", "Finished running data.py")
