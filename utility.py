@@ -17,7 +17,7 @@ def log(level, message):
         logging.warning(timestamp() + f" - {message}")
     elif level == "ERROR":
         logging.error(timestamp() + f" - {message}")
-    else:
+    elif level == "CRITICAL":
         logging.critical(timestamp() + f" - {message}")
 
 

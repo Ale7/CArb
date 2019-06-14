@@ -2,7 +2,7 @@ from research import *
 import threading
 
 FREQUENCY = 5
-PROFIT = 1
+PROFIT = 0.825
 
 
 def arbitrage():
@@ -22,15 +22,24 @@ def arbitrage():
 
         book1 = exchanges[0].fetch_order_book(pair)
         book2 = exchanges[1].fetch_order_book(pair)
-        book_data = find_order_info(book1, book2, PROFIT)
 
-        if int(book_data[1]) == -1 or int(book_data[2]) == -1:
-            find_spread(exchanges, pair)
+        books = low_high_book(book1, book2)
+
+        if books is None:
             continue
 
-        spread_info = find_spread(exchanges, pair)
-        low_exchange = spread_info[0]
-        high_exchange = spread_info[1]
+        if book1 is books[0]:
+            low_exchange = exchanges[0]
+            high_exchange = exchanges[1]
+        else:
+            low_exchange = exchanges[1]
+            high_exchange = exchanges[0]
+
+        order_info = find_order_info(book1, book2, PROFIT)
+
+        if order_info is [0, 0, 0]:
+            continue
+
         params = params_h = ""
 
         if low_exchange.id == "bittrex":
@@ -53,12 +62,12 @@ def arbitrage():
         side = "buy"
 
         lowest_bal = float(min(ex1_balances[currency], ex2_balances[currency]))
-        amount = min(float(book_data[0]), lowest_bal)
+        amount = min(float(order_info[0]), lowest_bal)
 
-        price = book_data[1]
+        price = order_info[1]
 
         side_h = "sell"
-        price_h = book_data[2]
+        price_h = order_info[2]
 
         log("INFO", f"Attempting to place order: {symbol}, {t}, {side}, {amount}, {price}, {params}")
         low_exchange.create_order(symbol, t, side, amount, price, params)
@@ -83,4 +92,5 @@ mycursor = database.cursor()
 exchanges = [binance, bittrex]
 
 arbitrage()
+
 log("INFO", "Finished running bot.py")
