@@ -3,6 +3,9 @@ import logging
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdate
 
+MIN = 0.325
+IDEAL = 0.825
+
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
 log("INFO", "Started running data.py")
@@ -17,7 +20,7 @@ log("INFO", "Fetched all rows from 'binance_bittrex_spreads' table")
 charts = {}
 
 for pair in research_pairs:
-    charts[pair] = {"x": [], "y": []}
+    charts[pair] = {"x": [], "y": [], "min": [], "ideal": []}
 
 for r in result:
     pair = r[1]
@@ -27,7 +30,18 @@ for r in result:
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
 
+    if spread >= MIN:
+        charts[pair].get("min").append(spread)
+    if spread >= IDEAL:
+        charts[pair].get("ideal").append(spread)
+
 log("INFO", "Prepared all data for chart subplots")
+
+for pair in research_pairs:
+    m = len(charts[pair].get("min"))
+    i = len(charts[pair].get("ideal"))
+
+    print(f"{pair} - spreads >= {MIN}: {m}, spreads >= {IDEAL}: {i}")
 
 plt.style.use('dark_background')
 fig = plt.figure(num='CArb Charts')
@@ -41,12 +55,16 @@ for i in range(1, 31):
     pair = research_pairs[i - 1]
     secs = mdate.epoch2num(charts[pair].get("x"))
     ax.plot(secs, charts[pair].get("y"), color="#C0C0C0", linewidth=1)
-    ax.axhline(y=0.325, color='g', linestyle="dashed", linewidth=1)
+
+    ax.axhline(y=IDEAL, color='g', linestyle="dashed", linewidth=1)
+    ax.axhline(y=MIN, color='y', linestyle="dashed", linewidth=1)
     ax.axhline(y=0, color='r', linewidth=1)
+
     ax.set_title(pair, size=10)
     ax.grid(color="#2F2F2F", linewidth=1)
     ax.set_facecolor("#191919")
     ax.xaxis.set_major_formatter(date_formatter)
+
     ax.tick_params(axis='both', which='major', labelsize=6)
     ax.tick_params(axis='both', which='minor', labelsize=6)
 
