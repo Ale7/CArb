@@ -22,6 +22,9 @@ charts = {}
 for pair in research_pairs:
     charts[pair] = {"x": [], "y": [], "min": [], "ideal": []}
 
+header = "%12s  %12s  %12s" % ("Pair", f">= {MIN}", f">= {IDEAL}")
+print(header)
+
 for r in result:
     pair = r[1]
     spread = r[2]
@@ -41,7 +44,8 @@ for pair in research_pairs:
     m = len(charts[pair].get("min"))
     i = len(charts[pair].get("ideal"))
 
-    print(f"{pair} - spreads >= {MIN}: {m}, spreads >= {IDEAL}: {i}")
+    line = "%12s  %12s  %12s" % (pair, m, i)
+    print(line)
 
 plt.style.use('dark_background')
 fig = plt.figure(num='CArb Charts')

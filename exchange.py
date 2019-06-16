@@ -42,32 +42,6 @@ def find_viable_volume(exs, pairs, min_usd):
     return plist
 
 
-def cost(pair, book, qty):
-    cur_trans = total = 0
-    qty = float(qty)
-    info = [pair, qty]
-
-    for b in book.values():
-        for order in b:
-            if order[1] > qty - cur_trans:
-                trade = qty - cur_trans
-            else:
-                trade = order[1]
-
-            cur_trans += trade
-            price = order[0] * trade
-            total += price
-            if cur_trans >= qty:
-                break
-
-        info.append(total)
-        cur_trans = 0
-        total = 0
-    log("INFO", f"Found cost to buy/sell {qty} {pair} with {book}: {info}")
-
-    return info
-
-
 def find_common_pairs(exs):
     ex1_tickers = []
     ex2_tickers = []
