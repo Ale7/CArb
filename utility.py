@@ -82,6 +82,6 @@ def get_bittrex_connection(key, secret):
         log("INFO", "Successfully established connection to Bittrex API")
         return bittrex
     except Exception as e:
-        log("ERROR", f"Failed to establish connection to bittrex API: {e}")
+        log("ERROR", f"Failed to establish connection to Bittrex API: {e}")
 
     return
