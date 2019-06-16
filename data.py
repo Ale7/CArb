@@ -1,4 +1,5 @@
 from research import *
+from config import *
 import logging
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdate
@@ -10,7 +11,7 @@ logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
 log("INFO", "Started running data.py")
 
-mydb = mysql_connect('67.225.225.24', 'alecwood_user198', 'pass198', 'alecwood_crypto')
+mydb = mysql_connect(mysql_host_local, mysql_username_local, mysql_password_local, mysql_db_local)
 
 mycursor = mydb.cursor()
 mycursor.execute("SELECT * FROM binance_bittrex_spreads")
