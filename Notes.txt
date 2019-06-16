@@ -1,11 +1,22 @@
 Worst case fees:
 
-Binance: 0.075%
+Binance:    0.100%
+Bittrex:    0.250%
+Kraken:     0.260%
+KuCoin:     0.100%
 
-Bittrex: 0.25%
+Binance/Bittrex =   0.325%
+Binance/Kraken =    0.335%
+Binance/KuCoin =    0.200%
+Bittrex/Kraken =    0.510%
+Bittrex/KuCoin =    0.350%
+Kraken/KuCoin =     0.360%
 
-Kraken: 0.26%
+APIs:
 
-BINA/TREX = 0.325%
-BINA/KRAK = 0.335%
-TREX/KRAK = 0.51%
+ccxt: https://github.com/ccxt/ccxt/wiki/Manual
+
+Binance: https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
+Bittrex: https://bittrex.github.io/api/v1-1
+Kraken: https://www.kraken.com/en-us/features/api
+KuCoin: https://docs.kucoin.com
