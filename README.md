@@ -4,4 +4,5 @@
 V 1.1
 
 TODO:
-* Testing
+* Migrate from web to local MySQL
+* Improve error logging
