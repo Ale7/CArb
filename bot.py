@@ -2,7 +2,8 @@ from research import *
 import threading
 
 FREQUENCY = 5
-PROFIT = 0.825
+PROFIT_FLOOR = 0.325
+PROFIT_IDEAL = PROFIT_FLOOR + 0.5
 
 
 def arbitrage():
@@ -35,7 +36,7 @@ def arbitrage():
             low_exchange = exchanges[1]
             high_exchange = exchanges[0]
 
-        order_info = find_order_info(book1, book2, PROFIT)
+        order_info = find_order_info(book1, book2, PROFIT_IDEAL)
 
         if order_info is [0, 0, 0]:
             continue
@@ -61,8 +62,8 @@ def arbitrage():
         t = "limit"
         side = "buy"
 
-        lowest_bal = float(min(ex1_balances[currency], ex2_balances[currency]))
-        amount = min(float(order_info[0]), lowest_bal)
+        lowest_balance = float(min(ex1_balances[currency], ex2_balances[currency]))
+        amount = min(float(order_info[0]), lowest_balance)
 
         price = order_info[1]
 

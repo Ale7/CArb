@@ -106,6 +106,25 @@ def find_spread(exs, pair):
     return spread
 
 
+def available_liquidity(book, price, buy):
+    units = i = 0
+
+    if buy is True:
+        b = book["asks"]
+        while b[i][0] <= price:
+            units += b[i][1]
+            i += 1
+    else:
+        b = book["bids"]
+        while b[i][0] >= price:
+            units += b[i][1]
+            i += 1
+
+
+
+    return units
+
+
 def find_order_info(low_book, high_book, floor):
     low_price = high_price = qty = 0
 

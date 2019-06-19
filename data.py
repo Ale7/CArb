@@ -4,8 +4,8 @@ import logging
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdate
 
-MIN = 0.325
-IDEAL = 0.825
+PROFIT_FLOOR = 0.325
+PROFIT_IDEAL = PROFIT_FLOOR + 0.5
 
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
@@ -23,7 +23,7 @@ charts = {}
 for pair in research_pairs:
     charts[pair] = {"x": [], "y": [], "min": [], "ideal": []}
 
-header = "%12s  %12s  %12s" % ("Pair", f">= {MIN}", f">= {IDEAL}")
+header = "%12s  %12s  %12s" % ("Pair", f">= {PROFIT_FLOOR}", f">= {PROFIT_IDEAL}")
 print(header)
 
 for r in result:
@@ -34,9 +34,9 @@ for r in result:
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
 
-    if spread >= MIN:
+    if spread >= PROFIT_FLOOR:
         charts[pair].get("min").append(spread)
-    if spread >= IDEAL:
+    if spread >= PROFIT_IDEAL:
         charts[pair].get("ideal").append(spread)
 
 log("INFO", "Prepared all data for chart subplots")
@@ -61,8 +61,8 @@ for i in range(1, 31):
     secs = mdate.epoch2num(charts[pair].get("x"))
     ax.plot(secs, charts[pair].get("y"), color="#C0C0C0", linewidth=1)
 
-    ax.axhline(y=IDEAL, color='g', linestyle="dashed", linewidth=1)
-    ax.axhline(y=MIN, color='y', linestyle="dashed", linewidth=1)
+    ax.axhline(y=PROFIT_IDEAL, color='g', linestyle="dashed", linewidth=1)
+    ax.axhline(y=PROFIT_FLOOR, color='y', linestyle="dashed", linewidth=1)
     ax.axhline(y=0, color='r', linewidth=1)
 
     ax.set_title(pair, size=10)

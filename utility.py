@@ -85,3 +85,17 @@ def get_bittrex_connection(key, secret):
         log("ERROR", f"Failed to establish connection to Bittrex API: {e}")
 
     return
+
+
+def get_kucoin_connection(key, secret):
+    try:
+        kucoin = ccxt.kucoin({
+            'apiKey': key,
+            'secret': secret
+        })
+        log("INFO", "Successfully established connection to KuCoin API")
+        return kucoin
+    except Exception as e:
+        log("ERROR", f"Failed to establish connection to KuCoin API: {e}")
+
+    return
