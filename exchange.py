@@ -120,8 +120,6 @@ def available_liquidity(book, price, buy):
             units += b[i][1]
             i += 1
 
-
-
     return units
 
 

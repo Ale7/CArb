@@ -36,7 +36,7 @@ def arbitrage():
             low_exchange = exchanges[1]
             high_exchange = exchanges[0]
 
-        order_info = find_order_info(book1, book2, PROFIT_IDEAL)
+        order_info = find_order_info(books[0], books[1], PROFIT_IDEAL)
 
         if order_info is [0, 0, 0]:
             continue

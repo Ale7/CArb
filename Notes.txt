@@ -20,3 +20,5 @@ Binance: https://github.com/binance-exchange/binance-official-api-docs/blob/mast
 Bittrex: https://bittrex.github.io/api/v1-1
 Kraken: https://www.kraken.com/en-us/features/api
 KuCoin: https://docs.kucoin.com
+
+{'bids': [[0.029244, 0.734], [0.029243, 9.004], [0.029238, 8.885], 'asks': [[0.02925, 10.0], [0.029252, 3.959], [0.029254, 8.0], 'timestamp': None, 'datetime': None, 'nonce': 628684961}
