@@ -21,15 +21,17 @@ log("INFO", "Fetched all rows from 'binance_bittrex_spreads' table")
 charts = {}
 
 for pair in research_pairs:
-    charts[pair] = {"x": [], "y": [], "min": [], "ideal": []}
+    charts[pair] = {"x": [], "y": [], "min": [], "ideal": [], "liquidity": []}
 
-header = "%12s  %12s  %12s" % ("Pair", f">= {PROFIT_FLOOR}", f">= {PROFIT_IDEAL}")
+header = "%15s  %15s  %15s  %15s" % ("Pair", f">= {PROFIT_FLOOR}", f">= {PROFIT_IDEAL}", "Liquidity")
 print(header)
 
 for r in result:
     pair = r[1]
     spread = r[2]
-    time = r[3]
+    quantity = r[3]
+    base = r[4]
+    time = r[5]
 
     charts[pair].get("x").append(time)
     charts[pair].get("y").append(spread)
@@ -39,13 +41,16 @@ for r in result:
     if spread >= PROFIT_IDEAL:
         charts[pair].get("ideal").append(spread)
 
+    charts[pair].get("liquidity").append(base)
+
 log("INFO", "Prepared all data for chart subplots")
 
 for pair in research_pairs:
-    m = len(charts[pair].get("min"))
-    i = len(charts[pair].get("ideal"))
+    floor = len(charts[pair].get("min"))
+    ideal = len(charts[pair].get("ideal"))
+    liquidity = round(sum(charts[pair].get("liquidity")), 4)
 
-    line = "%12s  %12s  %12s" % (pair, m, i)
+    line = "%15s  %15s  %15s  %15s" % (pair, floor, ideal, liquidity)
     print(line)
 
 plt.style.use('dark_background')
