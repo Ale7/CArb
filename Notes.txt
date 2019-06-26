@@ -5,8 +5,8 @@ Bittrex:    0.250%
 Kraken:     0.260%
 KuCoin:     0.100%
 
-Binance/Bittrex =   0.325%
-Binance/Kraken =    0.335%
+Binance/Bittrex =   0.350%
+Binance/Kraken =    0.360%
 Binance/KuCoin =    0.200%
 Bittrex/Kraken =    0.510%
 Bittrex/KuCoin =    0.350%
@@ -22,3 +22,54 @@ Kraken: https://www.kraken.com/en-us/features/api
 KuCoin: https://docs.kucoin.com
 
 {'bids': [[0.029244, 0.734], [0.029243, 9.004], [0.029238, 8.885], 'asks': [[0.02925, 10.0], [0.029252, 3.959], [0.029254, 8.0], 'timestamp': None, 'datetime': None, 'nonce': 628684961}
+
+Higher score indicates a better pair
+Worst possible score is 0
+
+
+A: Medium liquidity, low # opportunities
+
+liquidity = 2.354
+ideal = 12 (0.250%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 1.942
+
+
+B: Low liquidity, medium # opportunities
+
+liquidity = 0.43
+ideal = 20 (0.416%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 1.313
+
+
+C: Medium liquidity, med-high # opportunities
+
+liquidity = 3.65
+ideal = 46 (0.958%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 2.622
+
+
+D: High liquidity, low # opportunities
+
+liquidity = 18.52
+ideal = 8 (0.166%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 4.598 
+
+
+E: Low liquidity, high # opportunities
+
+liquidity = 0.32
+ideal = 86 (1.791%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 1.580 
+
+
+F: High liquidity, very high # opportunities
+
+liquidity = 10.43
+ideal = 230 (4.791%)
+time = 4800
+sqrt(1 + liquidity) * sqrt(1 + 50(ideal/time)) = 6.228

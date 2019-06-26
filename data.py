@@ -21,9 +21,10 @@ log("INFO", "Fetched all rows from 'binance_bittrex_spreads' table")
 charts = {}
 
 for pair in research_pairs:
-    charts[pair] = {"x": [], "y": [], "min": [], "ideal": [], "liquidity": []}
+    charts[pair] = {"x": [], "y": [], "min": [], "ideal": [], "liquidity": [], "rating": []}
 
-header = "%20s  %20s  %20s  %20s" % ("Pair", f"Spread >= {PROFIT_FLOOR}%", f"Spread >= {PROFIT_IDEAL}%", "Liquidity")
+header = "%20s  %20s  %20s  %20s %20s" % ("Pair", f"Spread >= {PROFIT_FLOOR}%",
+                                          f"Spread >= {PROFIT_IDEAL}%", "Liquidity", "Rating")
 print(header)
 
 for r in result:
@@ -46,17 +47,22 @@ for r in result:
 log("INFO", "Prepared all data for chart subplots")
 
 for pair in research_pairs:
+    time_count = len(charts[pair].get("x"))
     floor_count = len(charts[pair].get("min"))
-    floor_percent = 100 * round(floor_count / len(charts[pair].get("x")), 4)
-    floor_str = f"{floor_count} ({floor_percent}%)"
+    floor_percent = 100 * floor_count / time_count
+    floor_str = f"{floor_count} ({round(floor_percent, 4)}%)"
 
     ideal_count = len(charts[pair].get("ideal"))
-    ideal_percent = 100 * round(ideal_count / len(charts[pair].get("x")), 4)
-    ideal_str = f"{ideal_count} ({ideal_percent}%)"
+    ideal_percent = 100 * ideal_count / time_count
+    ideal_str = f"{ideal_count} ({round(ideal_percent, 4)}%)"
 
-    liquidity = round(sum(charts[pair].get("liquidity")), 4)
+    liquidity = sum(charts[pair].get("liquidity"))
+    liquidity_str = round(liquidity, 4)
 
-    line = "%20s  %20s  %20s  %20s" % (pair, floor_str, ideal_str, liquidity)
+    rating = math.sqrt(liquidity + 1) * math.sqrt(50 * ideal_count * time_count + 1) - 1
+    rating_str = round(rating, 4)
+
+    line = "%20s  %20s  %20s  %20s  %20s" % (pair, floor_str, ideal_str, liquidity_str, rating_str)
     print(line)
 
 plt.style.use('dark_background')
