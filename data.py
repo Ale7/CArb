@@ -7,6 +7,8 @@ import matplotlib.dates as mdate
 PROFIT_FLOOR = 0.325
 PROFIT_IDEAL = PROFIT_FLOOR + 0.5
 
+NORMALIZE_LIQUIDITY = 60 / FREQUENCY
+
 logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
 log("INFO", "Started running data.py")
@@ -57,6 +59,8 @@ for pair in research_pairs:
     ideal_str = f"{ideal_count} ({round(ideal_percent, 4)}%)"
 
     liquidity = sum(charts[pair].get("liquidity"))
+    if liquidity > 0:
+        liquidity = liquidity / NORMALIZE_LIQUIDITY
     liquidity_str = round(liquidity, 4)
 
     rating = math.sqrt(liquidity + 1) * math.sqrt(50 * ideal_count * time_count + 1) - 1
