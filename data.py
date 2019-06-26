@@ -23,7 +23,7 @@ charts = {}
 for pair in research_pairs:
     charts[pair] = {"x": [], "y": [], "min": [], "ideal": [], "liquidity": []}
 
-header = "%15s  %15s  %15s  %15s" % ("Pair", f">= {PROFIT_FLOOR}", f">= {PROFIT_IDEAL}", "Liquidity")
+header = "%20s  %20s  %20s  %20s" % ("Pair", f"Spread >= {PROFIT_FLOOR}%", f"Spread >= {PROFIT_IDEAL}%", "Liquidity")
 print(header)
 
 for r in result:
@@ -46,11 +46,17 @@ for r in result:
 log("INFO", "Prepared all data for chart subplots")
 
 for pair in research_pairs:
-    floor = len(charts[pair].get("min"))
-    ideal = len(charts[pair].get("ideal"))
+    floor_count = len(charts[pair].get("min"))
+    floor_percent = 100 * round(floor_count / len(charts[pair].get("x")), 4)
+    floor_str = f"{floor_count} ({floor_percent}%)"
+
+    ideal_count = len(charts[pair].get("ideal"))
+    ideal_percent = 100 * round(ideal_count / len(charts[pair].get("x")), 4)
+    ideal_str = f"{ideal_count} ({ideal_percent}%)"
+
     liquidity = round(sum(charts[pair].get("liquidity")), 4)
 
-    line = "%15s  %15s  %15s  %15s" % (pair, floor, ideal, liquidity)
+    line = "%20s  %20s  %20s  %20s" % (pair, floor_str, ideal_str, liquidity)
     print(line)
 
 plt.style.use('dark_background')
