@@ -63,11 +63,13 @@ for pair in research_pairs:
         liquidity = liquidity / NORMALIZE_LIQUIDITY
     liquidity_str = round(liquidity, 4)
 
-    rating = math.sqrt(liquidity + 1) * math.sqrt(50 * ideal_count * time_count + 1) - 1
+    rating = math.sqrt(liquidity + 1) * math.sqrt(50 * ideal_count / time_count + 1) - 1
     rating_str = round(rating, 4)
 
     line = "%20s  %20s  %20s  %20s  %20s" % (pair, floor_str, ideal_str, liquidity_str, rating_str)
     print(line)
+
+log("INFO", "Printed summary data to console")
 
 plt.style.use('dark_background')
 fig = plt.figure(num='CArb Charts')
