@@ -13,7 +13,7 @@ logging.basicConfig(filename='DataLogging.log', level=logging.INFO)
 
 log("INFO", "Started running data.py")
 
-mydb = mysql_connect(mysql_host_local, mysql_username_local, mysql_password_local, mysql_db_local)
+mydb = mysql_connect(mysql_host, mysql_username, mysql_password, mysql_db)
 
 mycursor = mydb.cursor()
 mycursor.execute("SELECT * FROM binance_bittrex_spreads")
