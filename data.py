@@ -16,9 +16,9 @@ log("INFO", "Started running data.py")
 mydb = mysql_connect(mysql_host, mysql_username, mysql_password, mysql_db)
 
 mycursor = mydb.cursor()
-mycursor.execute("SELECT * FROM binance_bittrex")
+mycursor.execute("SELECT * FROM BinanceBittrex")
 result = mycursor.fetchall()
-log("INFO", "Fetched all rows from 'binance_bittrex' table")
+log("INFO", "Fetched all rows from 'BinanceBittrex' table")
 
 charts = {}
 

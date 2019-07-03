@@ -124,3 +124,6 @@ dmypy.json
 
 # Config files
 config.py
+
+# Bot files
+bot.py
